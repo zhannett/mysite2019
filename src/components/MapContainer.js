@@ -7,13 +7,12 @@ import media from "../mediaTemplate";
 
 const Map = styled.div`
   width: 44%;
-
   border: 2px solid #999;
   border-radius: 4px;
   vertical-align: top;
   ${media.desktop`
     width: 100%;
-    height: 220px;
+    height: 260px;
   `};
   ${media.tablet`
     height: 260px;
