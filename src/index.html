@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html className="no-js" lang="en-us">
+  <!--
+	if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip')) ob_start("ob_gzhandler"); else ob_start();
+	header('Content-Type:text/html; charset=utf-8');
+	$media = 'http://janetkulyk.s3.amazonaws.com/img/';
+	$google_site_verification = '<meta name="google-site-verification" content="mA36N0CD7ALdTKHKR-ShMKKlwH8qDLEjWxwzbV47UnU" />';
+	include("inc/header_new.inc.php");
+-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>
+      Janet (Zhanna) Kulyk\'s Web Site - Web / Mobile Development Services -
+      Toronto, Canada
+    </title>
+    <meta name="author" content="Janet (Zhanna) Kulyk" />
+    <meta
+      name="keywords"
+      content="Janet (Zhanna) Kulyk, Жанна Кулик, web / mobile developer, HTML5, CSS3, JavaScript, jQuery, PHP, MySQL, performance, UI developer, frontend, web performance, Toronto, Ontario, Canada"
+    />
+    <meta
+      name="description"
+      content="Personal web site of Janet (Zhanna) Kulyk and JK IT Consulting Ltd., web / mobile development, design, front-end engineering"
+    />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+    <!--Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <link
+      rel="alternate"
+      media="handheld"
+      type="application/xhtml+xml"
+      href="http://m.janetkulyk.com/"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/normalize.css"
+      media="screen, projection"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/main.css"
+      media="screen, projection"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/jk.css"
+      media="screen, projection"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/fonts.css"
+      media="screen, projection"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/layout.css"
+      media="screen, projection"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/blockquotes.css"
+      media="screen, projection"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/links.css"
+      media="screen, projection"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/page.css"
+      media="screen, projection"
+    />
+    <!--
+    <link
+      rel="stylesheet"
+      href="assets/css/sticky-navigation.css"
+      media="screen, projection"
+    />
+    -->
+    <link
+      rel="stylesheet"
+      href="assets/css/modal.css"
+      media="screen, projection"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/prettyPhoto.css"
+      media="screen, projection"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/rwd.css"
+      media="screen, projection"
+    />
+
+    <!--
+    <link
+      rel="stylesheet"
+      href="assets/css/styles-min.css"
+      media="screen, projection"
+    />
+-->
+    <!--
+    <link
+      rel="stylesheet"
+      href="http://janetkulyk.s3.amazonaws.com/css/styles-min.gz.css"
+      media="screen, projection"
+    />
+    -->
+    <!-- echo $google_site_verification; -->
+    <!--<link href="https://plus.google.com/{plusPageUrl}" rel="publisher" />
+        -->
+    <style>
+      .flexrow {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+      }
+
+      html {
+        font-size: 16px;
+      }
+      @media screen and (min-width: 320px) {
+        html {
+          font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+        }
+      }
+      @media screen and (min-width: 1000px) {
+        html {
+          font-size: 22px;
+        }
+      }
+      /*
+ background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: Gradient 15s ease infinite;
+
+      */
+
+      @-webkit-keyframes Gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      @-moz-keyframes Gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      @keyframes Gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      h6 {
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        right: 0;
+        left: 0;
+      }
+      dl {
+        width: 100%;
+        padding: 4px;
+      }
+      dt {
+        display: inline-block;
+        width: 20%;
+        padding: 2px 0;
+        font-weight: bold;
+        font-size: medium;
+        vertical-align: top;
+      }
+      dd {
+        display: inline-block;
+        width: 70%;
+        padding: 2px 0;
+        font-size: medium;
+        vertical-align: top;
+      }
+      /*  style="background: #2743c0 linear-gradient(to bottom right, #2743c0, #ea639e);"  */
+    </style>
+  </head>
+  <body>
+    <div id="root">not rendered</div>
+    <div id="modal-root"></div>
+    <script src="./App.js"></script>
+    <!-- include("inc/footer_new.inc.php"); -->
+    <!--
+            <script>
+                document.documentElement.classList.add('theme-transition')
+                document.documentElement.setAttribute('data-theme', theme)
+                window.setTimeout(function() {
+                document.documentElement.classList.remove('theme-transition')
+                }, 1000)
+            </script>
+                -->
+    <!-- include("inc/ga.php"); -->
+  </body>
+</html>

@@ -1,0 +1,10 @@
+node_modules
+tmp
+.vscode/
+.cache/
+.idea/
+dist/
+.env
+.DS_Store
+coverage/
+src/components/config/

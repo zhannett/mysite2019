@@ -1,0 +1,68 @@
+@media screen and (max-width: 1024px) {
+  .document,
+  .fatfooter,
+  .fatfooter2,
+  .topnav,
+  .stay_connected {
+    width: auto;
+    margin: 0 10px;
+  }
+  .fatfooter .col {
+    margin: 0 2.1%;
+    width: 18%;
+  }
+  .fatfooter .col h2 {
+    font-size: 1.2em;
+  }
+  .vcard {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fatfooter .col {
+    margin: 0 1.5%;
+    width: 19%;
+  }
+  .fatfooter .col h2 {
+    font-size: 1.1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .panel_logo,
+  .fatfooter,
+  .fatfooter2,
+  #institutions img {
+    display: none;
+  }
+  .latest_projects,
+  .cols {
+    float: none;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .fatfooter .col h2 {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .document,
+  .fatfooter,
+  .fatfooter2,
+  .topnav,
+  .stay_connected {
+    width: 90%;
+  }
+  .fatfooter .col {
+    margin: 0 3.7%;
+    width: 15%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .document,
+  .fatfooter,
+  .fatfooter2,
+  .topnav,
+  .stay_connected {
+    max-width: 1140px;
+  }
+}

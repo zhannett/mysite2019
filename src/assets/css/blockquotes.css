@@ -1,0 +1,46 @@
+blockquote {
+  margin: 0 0 2rem 0;
+  padding: 1rem 1rem 1rem 2.5rem;
+  line-height: 1.6;
+  position: relative;
+  color: #fff;
+  font: italic 0.7em/1.8 Georgia, "Times New Roman", Times, serif;
+  border: 1px solid #000;
+  page-break-inside: avoid;
+  background: var(--color-salmon);
+  border-radius: 4px;
+}
+blockquote:before {
+  display: block;
+  content: "\201C";
+  font-size: 5rem;
+  position: absolute;
+  left: 5px;
+  top: -25px;
+  color: #444;
+}
+
+blockquote .author {
+  color: #444;
+  font: italic 0.7em/1.8 Georgia, "Times New Roman", Times, serif;
+  padding: 1rem;
+}
+
+blockquote cite {
+  color: #444;
+  font-size: 0.9em;
+  display: block;
+  margin: 15px 0 0 0;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+.right-sidebar blockquote:nth-child(odd) {
+  transform: rotate(5deg);
+}
+
+.right-sidebar blockquote:nth-child(even) {
+  transform: rotate(-5deg);
+}

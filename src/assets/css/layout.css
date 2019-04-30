@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: Georgia, serif;
+}
+body {
+  background-color: #fbfbfb;
+  background: #444;
+}
+h1,
+h2,
+h3 {
+  margin-top: 0;
+}
+header h1 {
+  margin: 0;
+}
+main p {
+  margin-bottom: 0;
+}
+
+:root {
+  --color-royalblue: #3a8fda;
+  --color-mediumturquose: #6adfd6;
+  --color-orchid: #df52cb;
+  --color-indianred: #e94363;
+  --color-aquamarine: #7af3e0;
+  --color-lightskyblue: #61dafb;
+  --color-cornflowerblue: #618dfb;
+  --color-salmon: #fb8261;
+}
+
+.header {
+  grid-area: header;
+  line-height: 32px;
+  background-image: linear-gradient(
+    to right,
+    #618dfb,
+    var(--color-lightskyblue)
+  );
+}
+
+.main-menu {
+  grid-area: menu;
+  height: 80px;
+  align-self: center;
+  justify-self: end;
+  font-size: 1rem;
+  z-index: 100;
+}
+.content-area {
+  grid-area: content;
+  color: #444;
+  background: #f8f8f8;
+  border-radius: 4px;
+}
+
+.left-sidebar {
+  grid-area: left-sidebar;
+}
+/*  margin-left: 1rem;  */
+.right-sidebar {
+  grid-area: right-sidebar;
+  margin-right: 1rem;
+}
+.sponsors-wrapper {
+  grid-area: sponsors;
+}
+.footer {
+  grid-area: footer;
+}
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 96px auto 220px;
+  grid-gap: 1rem 2rem;
+  grid-template-rows: 160px auto;
+  grid-template-areas:
+    "header header header"
+    "left-sidebar content right-sidebar"
+    "sponsors sponsors sponsors"
+    "footer footer footer";
+  background: #444;
+}
+.main-header {
+  height: 3rem;
+}
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.main-menu__item {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+}
+.main-menu .main-menu__item:last-of-type {
+  margin-right: 0;
+}
+.sidebar {
+  grid-area: sidebar;
+  padding: 1rem;
+}
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 1rem;
+}
+.sponsor {
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #fff;
+  border-radius: 0.625rem;
+  place-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-area > div {
+  padding: 1.5rem 4rem 4rem 4rem;
+  text-align: left;
+}
+
+@media all and (max-width: 992px) {
+  .container {
+    grid-gap: 1.5rem 1rem;
+    grid-template-rows: 120px auto;
+    grid-template-columns: 96px auto 200px;
+  }
+  .sponsors {
+    grid-column-gap: 0.5rem;
+  }
+  .content-area > div {
+    padding: 1.5rem 2.5rem 3rem 2.5rem;
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    grid-template-columns: 96px auto;
+    grid-gap: 2rem 1rem;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "header header"
+      "left-sidebar content"
+      "sponsors sponsors"
+      "footer footer";
+  }
+  .header {
+    height: 120px;
+  }
+  .sponsors {
+    grid-column-gap: 0;
+    grid-row-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  .content-area {
+    margin-right: 2rem;
+    border-radius: 0;
+  }
+  .content-area > div {
+    padding: 1.5rem 2rem 3rem 2rem;
+    text-align: left;
+  }
+  .right-sidebar {
+    display: none;
+  }
+}
+
+@media all and (max-width: 540px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-gap: 0 0;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header"
+      "content"
+      "sponsors"
+      "footer";
+  }
+  .header {
+    height: 112px;
+  }
+  .content-area {
+    margin-right: 0;
+    border-radius: 0;
+    padding: 0 1.5rem 3rem 1.5rem;
+  }
+  .content-area > div {
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    text-align: left;
+  }
+  .main-menu {
+    justify-self: start;
+  }
+  .left-sidebar {
+    display: none;
+  }
+}
+
+.first-letter {
+  font-size: 2rem;
+  line-height: 0.7;
+  color: var(--color-salmon);
+  font-family: "Rouge Script";
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  padding: 3rem;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  letter-spacing: 4px;
+  word-spacing: 8px;
+  margin: 0;
+  font-size: 16px;
+}

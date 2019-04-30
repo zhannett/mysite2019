@@ -1,0 +1,29 @@
+.page {
+  background: linear-gradient(top, #fff 0%, #e5e5e5 100%);
+}
+
+.foldtl {
+  position: relative;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.foldtl:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0p;
+  height: 0p;
+  border-bottom: 70px solid #eee;
+  border-left: 70px solid #ccc; /*S et to background color, not transparent! */
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+@media all and (max-width: 540px) {
+  .page {
+    background: #e5e5e5;
+  }
+  .foldtl:before {
+    display: none;
+  }
+}

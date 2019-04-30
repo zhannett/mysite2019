@@ -1,0 +1,413 @@
+/* HTML Selectors  */
+
+body {
+  font-size: 100%;
+  text-align: center;
+  overflow: auto;
+  /* background: url(http://janetkulyk.s3.amazonaws.com/img/bg_xmas.gif); */
+  color: #727272;
+} /* EosMosaic1b.gif */
+
+.img_list li {
+  padding: 15px 0;
+}
+
+.document,
+.fatfooter,
+.fatfooter2,
+.topnav,
+.stay_connected {
+  width: 1140px;
+  margin: 0 auto;
+}
+.document,
+.fatfooter,
+.fatfooter2 {
+  margin: 0 auto;
+}
+.fatfooter_wrapper,
+.fatfooter2_wrapper {
+  width: 100%;
+  text-align: center;
+}
+.fatfooter {
+  text-align: center;
+}
+.fatfooter2 {
+  text-align: center;
+}
+.payattention {
+  color: #e44d26;
+}
+
+/*
+	a[href^="mailto:"]:before { content: "\2709"; }
+	a[href^="mailto:"]:before { content: "\2709"; }
+	 .phone:before             { content: "\2706"; }
+	 .important:before         { content: "\27BD"; }
+       .alert:before             { content: "\26A0"; }
+      */
+
+table {
+  font-size: 100%;
+  color: #727272;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+th {
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 3px;
+}
+td {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 2px;
+}
+acronym {
+  border-bottom: 1px dotted #727272;
+}
+caption {
+  margin: 20px 0;
+  font: bold italic 1.4em Georgia, "Times New Roman", Times, serif;
+  color: #725050;
+}
+
+/* Generic Page Components */
+.logo {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 3em;
+  background-color: #e2e2e2;
+  color: #000;
+  width: 5em;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+#clock {
+  display: inline-block;
+  width: 60px;
+  text-align: left;
+}
+/*
+	#switcher {float:right; width:350px; padding-bottom:5px; clear:right; padding-right:2px}
+	#switcher .button {float:right; width:15px; padding:3px; margin: .5em .5em 0em 0em; position: relative; display:inline; background-color:#B2CDE0; font-size:0.75em; cursor: pointer; color:#727272; text-align:center}
+	#switcher div.label {float:right; width:125px; margin-right:5px; cursor: pointer; position: relative; top:5px}
+	#switcher div.label span.txt {font:0.7em Calibri,"Lucida Grande",Arial,Helvetica,sans-serif; color:#999; border-bottom: 1px solid #CCC}
+	*/
+.html5 {
+  width: 70px;
+  height: 80px;
+  clear: both;
+  -webkit-box-shadow: 5px 5px 7px #999;
+  background: url(http://janetkulyk.s3.amazonaws.com/img/HTML5_Logo_64.png) 0
+    4px no-repeat;
+}
+.css3 {
+  width: 70px;
+  height: 80px;
+  clear: both;
+  -webkit-box-shadow: 5px 5px 7px #999;
+  background: url(http://janetkulyk.s3.amazonaws.com/img/logo_css3.png) 0 4px
+    no-repeat;
+  margin-top: 25px;
+}
+.copyright {
+  height: 2.4em;
+  line-height: 2.4em;
+  background-color: #333;
+  font-size: small;
+  text-align: center;
+  color: #fff;
+}
+.fatfooter_wrapper,
+.fatfooter {
+  background: #666;
+  background: rgba(102, 102, 102, 0.5);
+}
+.fatfooter2_wrapper,
+.fatfooter2 {
+  background: #333;
+  background: rgba(51, 51, 51, 0.5);
+}
+.fatfooter,
+.fatfooter2 {
+  color: #fff;
+  font-size: 1em;
+  margin: auto;
+  text-align: left;
+  line-height: 1.4em;
+  overflow: hidden;
+}
+.fatfooter .cols h2 {
+  color: #666;
+  margin-top: 10px;
+}
+.fatfooter .cols {
+  width: 90%;
+  margin: 15px auto;
+  padding: 0;
+}
+.fatfooter .col {
+  box-model: border-box;
+  display: inline-block;
+  vertical-align: top;
+  margin: 3%;
+  box-model: border-box;
+  overflow: hidden;
+  width: 19%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 1%;
+}
+.fatfooter .col p {
+  width: inherit;
+}
+.fatfooter .col ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+.fatfooter .col img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.stay_connected_wrapper {
+  background: #999;
+  background: rgba(153, 153, 153, 0.5);
+  width: 100%;
+  text-align: center;
+}
+.stay_connected {
+  background: #999;
+  background: rgba(153, 153, 153, 0.3);
+  color: #fff;
+  font-size: 1em;
+  margin: auto;
+  text-align: left;
+  line-height: 1.4em;
+  height: 4em;
+  overflow: hidden;
+}
+.stay_connected h2,
+.fatfooter2 h2 {
+  text-align: left;
+  padding: 0 0 0 20px;
+}
+.fatfooter h2 {
+  color: #fff;
+  text-align: left;
+}
+.fatfooter2 h2 {
+  color: #fff;
+  display: block;
+}
+.stay_connected h2 {
+  color: #333;
+  display: inline-block;
+  vertical-align: top;
+}
+.list_social {
+  display: inline-block;
+  vertical-align: top;
+}
+.list_social li {
+  display: inline;
+  margin: 0 8px;
+}
+#tweets {
+  padding: 0 0 0 40px;
+}
+#tweets li {
+  list-style-image: url(http://janetkulyk.s3.amazonaws.com/img/icons/icon_twitter_16x16.png);
+}
+
+/* Navigation */
+#stickyNavigation {
+  z-index: 100;
+}
+
+/* Classes - global */
+.bg_top {
+  height: 16px;
+  background-image: -moz-linear-gradient(50% 10%, #fff, #e8e8e8);
+  background-image: -webkit-gradient(
+    linear,
+    50% 100%,
+    50% 0%,
+    from (#fff),
+    to (#e8e8e8)
+  );
+}
+.inline_linkedin {
+  display: inline-block;
+  padding: 0 0 0 20px;
+  background: url(http://janetkulyk.s3.amazonaws.com/img/icons/icon_linkedin.png)
+    0 5px no-repeat;
+}
+.orange {
+  color: #e44d26;
+}
+.bold {
+  font-weight: bold;
+}
+
+/* Page Components */
+
+/* galleries */
+.galleries {
+  padding: 0;
+}
+.galleries li {
+  float: left;
+  display: inline;
+  margin: 10px 2px;
+}
+.galleries article {
+  width: 100px;
+  height: 160px;
+  border: 1px solid #ccc;
+  background-color: #eef0ca;
+  text-align: center;
+}
+.galleries article h5 {
+  height: 40px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+.galleries article img {
+  vertical-align: bottom;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin: 0.4em;
+  border: 1px solid #ccc;
+  padding: 1px;
+}
+.gallery {
+  overflow: hidden;
+}
+ul.gallery li {
+  float: left;
+  display: inline;
+}
+.gallery img {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin: 0.4em;
+  padding: 1px;
+}
+.thegallery {
+  display: none;
+  width: 100%;
+  margin: 20px 0;
+}
+.thegallery li {
+  float: left;
+  display: inline;
+}
+.certimg {
+  float: left;
+  padding: 3px;
+  border: 1px solid #ccc;
+  margin: 1em;
+}
+
+/* built-in lists */
+#list,
+#list tr,
+#list td {
+  width: 100%;
+  border: 0;
+  text-align: left;
+}
+
+/* home */
+
+.latest_projects {
+  width: 93%;
+  margin: 15px 0 0 50px;
+  padding: 0;
+}
+.latest_projects article {
+  display: inline-block;
+  box-model: border-box;
+  border: 1px solid #ccc;
+  padding: 10px 10px 10px 0;
+  border-radius: 5px;
+  vertical-align: top;
+  background-color: #fff;
+  width: 44%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+.title_jwplayer,
+.title_my_mobile {
+  margin: 0 0 35px 0;
+}
+.title_jwplayer {
+  margin-right: 10px;
+}
+.latest_projects article {
+  box-model: border-box;
+  padding: 2%;
+}
+.latest_projects article img {
+  float: left;
+  border: 1px solid #ccc;
+  max-width: 35%;
+  margin: 0 5% 0 0;
+}
+.title_jwplayer a {
+  color: #666;
+  font-size: 1em;
+}
+.title_jwplayer a:hover {
+  text-decoration: none;
+}
+.title_jwplayer a.link:hover {
+  text-decoration: underline;
+}
+.title_jwplayer a.link {
+  color: #005a9c;
+}
+.title_css3_demo {
+  width: 150px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px 0 0 10px;
+}
+
+/* education */
+.logo_edu {
+  display: inline-block;
+  width: 24%;
+  vertical-align: top;
+}
+.name_edu {
+  display: inline-block;
+  width: 75%;
+  vertical-align: top;
+}
+
+/*  social  */
+.social {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url(http://janetkulyk.s3.amazonaws.com/img/sprite-icons.png)
+    no-repeat;
+  vertical-align: top;
+}
+.linkedin {
+  background-position: 0 0;
+}
+.yahoo {
+  background-position: -168px 0;
+}
+.facebook {
+  background-position: -42px 0;
+}
+.twitter {
+  background-position: -84px 0;
+}

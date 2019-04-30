@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    [
+      "emotion",
+      {
+        "sourceMap": true,
+        "labelFormat": "[local]",
+        "cssPropOptimization": true
+      }
+    ]
+  ]
+}

@@ -1,0 +1,75 @@
+/* Hypertext Links */
+
+a {
+  text-decoration: none;
+  position: relative;
+  transition: all 1s;
+  color: var(--color-cornflowerblue);
+  background: transparent;
+  cursor: pointer;
+}
+
+a:visited {
+  color: var(--color-mediumturquose);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-salmon);
+}
+a:active {
+  color: var(--color-salmon);
+}
+
+a.external {
+  padding-left: 15px;
+  background: url(http://janetkulyk.s3.amazonaws.com/img/remote.gif) center left
+    no-repeat;
+}
+a.external:hover {
+  background: #e2e2e2 url(http://janetkulyk.s3.amazonaws.com/img/remote_a.gif)
+    center left no-repeat;
+}
+a.mysite {
+  background: none;
+}
+
+.mailto a:link {
+  font-size: mediumm;
+  line-height: 1.4rem;
+}
+.mailto a:hover {
+  text-decoration: none;
+  background-color: #e2e2e2;
+}
+
+a.pdflink {
+  color: #090;
+  background: url(../img/pdf.png) no-repeat 0 0;
+}
+span a.pdflink {
+  padding-left: 25px;
+  font-weight: normal;
+  display: block;
+  height: 16px;
+  color: #090;
+}
+
+a img {
+  text-decoration: none;
+}
+
+a:before {
+  content: "";
+  width: 0;
+  height: 0.1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 1s;
+}
+
+a:hover:before {
+  width: 100%;
+  left: 0;
+  background: var(--color-salmon);
+}
