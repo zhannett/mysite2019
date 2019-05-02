@@ -6,6 +6,7 @@ import IconCodePen from "../../svgComponents/IconCodePen";
 import IconGithub from "../../svgComponents/IconGithub";
 import IconReact from "../../svgComponents/IconReact";
 import IconCloud from "../../svgComponents/IconCloud";
+import CSS3 from "../../svgComponents/CSS3";
 
 const Wrapper = styled.div`
   display: flex;
@@ -25,6 +26,13 @@ const Wrapper = styled.div`
   }
 `;
 
+const LogoContainer = styled.div`
+  width: 64px;
+  height: 64px;
+  background: #000;
+  margin-top: 16px;
+`;
+
 class W3C extends Component {
   constructor(props) {
     super(props);
@@ -41,10 +49,10 @@ render() {
           alt="React.js"
           aria-label="React.js"
         >
-          <div data-tip="React.js" style={{ width: "64px", height: "64px", background: "#000" }}>
+          <LogoContainer data-tip="React.js" style={{marginTop: '16px'}}>
             <IconReact />
             <ReactTooltip />
-          </div>
+          </LogoContainer>
         </a>
 
         <a
@@ -55,15 +63,9 @@ render() {
           alt="Amazon Web Services"
           aria-label="Amazon Webservices"
         >
-          <div
+          <LogoContainer
             data-tip="Amazon Web Services"
-            style={{
-              width: "64px",
-              height: "64px",
-              background: "#000",
-              marginTop: "24px",
-              writingMode: 'horizontal-tb'
-            }}
+            style={{writingMode: 'horizontal-tb'}}
           >
             <IconCloud />
             <ReactTooltip />
@@ -80,7 +82,7 @@ render() {
             >
               AWS
             </span>
-          </div>
+          </LogoContainer>
         </a>
 
         <a
@@ -90,18 +92,10 @@ render() {
           alt="Github"
           aria-label="Github"
         >
-          <div
-            data-tip="Github"
-            style={{
-              width: "64px",
-              height: "64px",
-              background: "#000",
-              marginTop: "24px"
-            }}
-          >
+          <LogoContainer data-tip="Github">
             <IconGithub />
             <ReactTooltip />
-          </div>
+          </LogoContainer>
         </a>
 
         <a
@@ -111,37 +105,23 @@ render() {
           alt="CodePen"
           aria-label="CodePen"
         >
-          <div
-          data-tip="CodePen"
-            style={{
-              width: "64px",
-              height: "64px",
-              background: "#000",
-              paddingTop: "8px",
-              marginTop: "24px"
-            }}
+          <LogoContainer
+            data-tip="CodePen"
+            style={{paddingTop: "8px"}}
           >
             <IconCodePen />
             <ReactTooltip />
-          </div>
+          </LogoContainer>
         </a>
 
         <a
-        data-tip="styled-components"
+          data-tip="styled-components"
           href="https://www.styled-components.com/"
           target="_blank"
           rel="noopener"
           alt="styled-components"
         >
-          <div
-            style={{
-              width: "64px",
-              height: "64px",
-              background: "#000",
-              paddingTop: "12px",
-              marginTop: "16px"
-            }}
-          >
+          <LogoContainer style={{paddingTop: "12px"}}>
             <img
               src="https://www.styled-components.com/static/icon.png"
               width="56"
@@ -149,8 +129,20 @@ render() {
               alt="styled-components"
             />
             <ReactTooltip />
-          </div>
+          </LogoContainer>
         </a>
+
+        <LogoContainer
+            data-tip="CSS3"
+            style={{
+              paddingTop: "12px",
+              position: "relative"
+            }}
+          >
+            <span style={{position: 'absolute', top: '2px', left: '-7px', overflow: 'visible'}}><CSS3 /></span>
+            <ReactTooltip />
+          </LogoContainer>
+        
       </div>
       <p className="vertical-text">Used technologies</p>
     </Wrapper>
