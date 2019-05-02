@@ -1,6 +1,6 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
-import ReactTooltip from 'react-tooltip';
+import ReactTooltip from "react-tooltip";
 
 import IconCodePen from "../../svgComponents/IconCodePen";
 import IconGithub from "../../svgComponents/IconGithub";
@@ -37,117 +37,122 @@ class W3C extends Component {
   constructor(props) {
     super(props);
   }
-  
-render() {
-  return (
-    <Wrapper>
-      <div>
-        <a
-          href="https://reactjs.org/"
-          target="_blank"
-          rel="noopener"
-          alt="React.js"
-          aria-label="React.js"
-        >
-          <LogoContainer data-tip="React.js" style={{marginTop: '16px'}}>
-            <IconReact />
-            <ReactTooltip />
-          </LogoContainer>
-        </a>
 
-        <a
-          href="https://aws.amazon.com/"
-          target="_blank"
-          rel="noopener"
-          style={{ color: "#fff" }}
-          alt="Amazon Web Services"
-          aria-label="Amazon Webservices"
-        >
-          <LogoContainer
-            data-tip="Amazon Web Services"
-            style={{writingMode: 'horizontal-tb'}}
+  render() {
+    return (
+      <Wrapper>
+        <div>
+          <a
+            href="https://reactjs.org/"
+            target="_blank"
+            rel="noopener"
+            alt="React.js"
+            aria-label="React.js"
           >
-            <IconCloud />
-            <ReactTooltip />
-            <span
-              style={{
-                display: 'inline-block',
-                width: '40px',
-                position: "absolute",
-                top: "20px",
-                left: "10px",
-                fontSize: "16px",
-                color: "#fff"
-              }}
+            <LogoContainer data-tip="React.js" style={{ marginTop: "16px" }}>
+              <IconReact />
+              <ReactTooltip />
+            </LogoContainer>
+          </a>
+
+          <a
+            href="https://aws.amazon.com/"
+            target="_blank"
+            rel="noopener"
+            style={{ color: "#fff" }}
+            alt="Amazon Web Services"
+            aria-label="Amazon Webservices"
+          >
+            <LogoContainer
+              data-tip="Amazon Web Services"
+              style={{ writingMode: "horizontal-tb" }}
             >
-              AWS
-            </span>
-          </LogoContainer>
-        </a>
+              <IconCloud />
+              <ReactTooltip />
+              <span
+                style={{
+                  display: "inline-block",
+                  width: "40px",
+                  position: "absolute",
+                  top: "22px",
+                  left: "14px",
+                  fontSize: "16px",
+                  color: "#fff"
+                }}
+              >
+                AWS
+              </span>
+            </LogoContainer>
+          </a>
 
-        <a
-          href="https://github.com/"
-          target="_blank"
-          rel="noopener"
-          alt="Github"
-          aria-label="Github"
-        >
-          <LogoContainer data-tip="Github">
-            <IconGithub />
-            <ReactTooltip />
-          </LogoContainer>
-        </a>
-
-        <a
-          href="https://codepen.io/"
-          target="_blank"
-          rel="noopener"
-          alt="CodePen"
-          aria-label="CodePen"
-        >
-          <LogoContainer
-            data-tip="CodePen"
-            style={{paddingTop: "8px"}}
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener"
+            alt="Github"
+            aria-label="Github"
           >
-            <IconCodePen />
-            <ReactTooltip />
-          </LogoContainer>
-        </a>
+            <LogoContainer data-tip="Github">
+              <IconGithub />
+              <ReactTooltip />
+            </LogoContainer>
+          </a>
 
-        <a
-          data-tip="styled-components"
-          href="https://www.styled-components.com/"
-          target="_blank"
-          rel="noopener"
-          alt="styled-components"
-        >
-          <LogoContainer style={{paddingTop: "12px"}}>
-            <img
-              src="https://www.styled-components.com/static/icon.png"
-              width="56"
-              height="26"
-              alt="styled-components"
-            />
-            <ReactTooltip />
-          </LogoContainer>
-        </a>
+          <a
+            href="https://codepen.io/"
+            target="_blank"
+            rel="noopener"
+            alt="CodePen"
+            aria-label="CodePen"
+          >
+            <LogoContainer data-tip="CodePen" style={{ paddingTop: "8px" }}>
+              <IconCodePen />
+              <ReactTooltip />
+            </LogoContainer>
+          </a>
 
-        <LogoContainer
+          <a
+            data-tip="styled-components"
+            href="https://www.styled-components.com/"
+            target="_blank"
+            rel="noopener"
+            alt="styled-components"
+          >
+            <LogoContainer style={{ paddingTop: "12px" }}>
+              <img
+                src="https://www.styled-components.com/static/icon.png"
+                width="56"
+                height="26"
+                alt="styled-components"
+              />
+              <ReactTooltip />
+            </LogoContainer>
+          </a>
+
+          <LogoContainer
             data-tip="CSS3"
             style={{
               paddingTop: "12px",
               position: "relative"
             }}
           >
-            <span style={{position: 'absolute', top: '2px', left: '-7px', overflow: 'visible'}}><CSS3 /></span>
+            <span
+              style={{
+                position: "absolute",
+                top: "2px",
+                left: "-7px",
+                overflow: "visible"
+              }}
+            >
+              <CSS3 />
+            </span>
             <ReactTooltip />
           </LogoContainer>
-        
-      </div>
-      <p className="vertical-text">Used technologies</p>
-    </Wrapper>
-  );
-} 
-};
+        </div>
+        <p className="vertical-text">Used technologies</p>
+      </Wrapper>
+    );
+  }
+}
 
 export default W3C;

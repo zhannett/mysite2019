@@ -63,14 +63,23 @@ const Promo = styled.div`
 `;
 
 const Focus = styled.div`
+  display: block;
+  column-count: 2;
+  margin-top: 1rem;
+  ${media.desktop`
+  column-count: 1;
+  `};
   p {
     line-height: 1.4;
-    margin: 1rem 0;
+    padding-top: 1rem;
     text-align: justify;
     font-size: medium;
     font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    &:first-of-type {
+      margin-top: 0;
+    }
   }
 `;
 
