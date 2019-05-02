@@ -38,28 +38,34 @@ const Dropdown = styled.ul`
   li {
     width: auto;
     border-radius: 4px;
-    ${media.phone`
+    padding: 4px 16px;
+    ${media.tablet`
       line-height: 60px;
       padding: 4px 8px;
     `};
     ${media.phone`
       line-height: 56px;
+      padding: 4px;
     `};
   ul {
     padding-left: 0;
   }
   a,
   a:visited {
-    color: #444;
+    color: #fff;
   }
   a {
     transition: all 0,3s;
+    font-weight: 700;
+    ${media.phone`
+      font-weight: 400;
+    `};
   }
   a:hover {
-    color: #fff;
+    color: #000;
   }
   a:active {
-    color: var(--color-salmon);
+    color: var(--color-tomato);
     background-color: transparent;
   }
   a:hover:before {
