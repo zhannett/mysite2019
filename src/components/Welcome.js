@@ -68,22 +68,9 @@ const Focus = styled.div`
     margin: 1rem 0;
     text-align: justify;
     font-size: medium;
-  }
-`;
-
-const ANIM = styled.div`
-  width: 500px;
-  height: 90px;
-  background: hsla(0, 5%, 5%, 1);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: linear-gradient(
-    to right top,
-    hsla(0, 5%, 15%, 0.5),
-    hsla(0, 5%, 5%, 1)
-  );
-  svg {
-    width: 100%;
+    font-feature-settings: "onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 `;
 

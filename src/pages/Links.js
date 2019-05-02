@@ -132,10 +132,6 @@ class Links extends Component {
                           "https://www.creativebloq.com/net-magazine",
                           "Browser Statistics Net Magazine"
                         )}
-                        {this.renderExternalLink(
-                          "http://csszengarden.com",
-                          "CSS Zen Garden"
-                        )}
                       </ul>
                     </AccordionItemPanel>
                   </AccordionItem>
@@ -159,6 +155,38 @@ class Links extends Component {
                         {this.renderExternalLink(
                           "http://howjavascriptworks.com/",
                           "How JavaScript Works"
+                        )}
+                        {this.renderExternalLink(
+                          "https://medium.com/@jsmuster/awesome-es6-features-by-example-58974b356955",
+                          "Awesome ES6 Features By Example"
+                        )}
+                      </ul>
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        <span /> React.js / Redux
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      <ul>
+                      {this.renderExternalLink(
+                          "https://kentcdodds.com/blog",
+                          "Kent C. Dodds blog"
+                        )}
+                      {this.renderExternalLink(
+                          "https://css-tricks.com/using-react-portals-to-render-children-outside-the-dom-hierarchy/",
+                          "Using React Portals to Render Children Outside the DOM Hierarchy"
+                        )}
+                        {this.renderExternalLink(
+                          "https://medium.com/@jsmuster/understanding-reducers-d0f934aceccd",
+                          "Understanding Reducers from scratch"
+                        )}
+                        {this.renderExternalLink(
+                          "https://medium.com/@jsmuster/using-redux-standalone-497aa85981c1",
+                          "Using Redux standalone"
                         )}
                       </ul>
                     </AccordionItemPanel>
@@ -208,6 +236,14 @@ class Links extends Component {
                     <AccordionItemPanel>
                       <ul>
                       {this.renderExternalLink(
+                          "http://csszengarden.com",
+                          "CSS Zen Garden"
+                        )}
+                      {this.renderExternalLink(
+                          "https://medium.freecodecamp.org/web-fonts-in-2018-f191a48367e8",
+                          "How to load web fonts to avoid performance issues and speed up page loading"
+                        )}
+                      {this.renderExternalLink(
                           "http://www.google.com/webfonts/",
                           "Google Web Fonts"
                         )}
@@ -215,6 +251,15 @@ class Links extends Component {
                           "http://www.hongkiat.com/blog/beautiful-free-fonts-for-titles-and-headlines/",
                           "Fonts for Titles and Headlines"
                         )}
+                        {this.renderExternalLink(
+                          "https://www.sarasoueidan.com/blog/hex-rgb-to-hsl/",
+                          "On Switching from HEX & RGB to HSL"
+                        )}
+                        {this.renderExternalLink(
+                          "https://speckyboy.com/css-background-effects/",
+                          "10 Snippets for Creating Unique Background Effects with CSS"
+                        )}
+                        
                       </ul>
                     </AccordionItemPanel>
                   </AccordionItem>
@@ -227,10 +272,6 @@ class Links extends Component {
                     <AccordionItemPanel>
                       <ul>
                       {this.renderExternalLink(
-                          "https://smashingmagazine.com/",
-                          "Smashing Magazine"
-                        )}
-                        {this.renderExternalLink(
                           "https://smashingmagazine.com/",
                           "Smashing Magazine"
                         )}
@@ -253,10 +294,6 @@ class Links extends Component {
                        {this.renderExternalLink(
                           "http://vandelaydesign.com/blog/design/flickr-groups-for-designers/",
                           "Vandelay Design's list of 99 Flickr groups for design inspiration."
-                        )}
-                       {this.renderExternalLink(
-                          "https://zurb.com/",
-                          "UI Examples"
                         )}
                        {this.renderExternalLink(
                           "https://zurb.com/",
