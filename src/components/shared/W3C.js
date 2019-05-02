@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import styled from "styled-components";
-import { Link } from "@reach/router";
 import ReactTooltip from 'react-tooltip';
 
 import IconCodePen from "../../svgComponents/IconCodePen";
@@ -26,55 +25,12 @@ const Wrapper = styled.div`
   }
 `;
 
-const portalRoot = document.getElementById("portal");
-
 class W3C extends Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      on: false
-    };
-
-    this.setupRefs();
-    this.setupEvents();
   }
-
-  setupRefs() {
-    this.toolTip = React.createRef();
-}
-
-setupEvents() {
-    this.createBtn = this.createBtn.bind(this);
-    this.handleOnMouseOver = this.handleOnMouseOver.bind(this);
-    this.handleOnMouseOut = this.handleOnMouseOut.bind(this);
-}
-
-handleOnMouseOut(evt) {
-    this.toolTip.current.hide();
-}
-
-handleOnMouseOver(evt) {
-    // get hovered element reference
-    let el = evt.currentTarget;
-    
-    if (el !== null) {
-        let rect = el.getBoundingClientRect();
-        this.toolTip.current.show(rect);
-    }
-}
-createBtn(id, obj) {
-  var {handleOnMouseOver, handleOnMouseOut} = this;
-  
-  return (
-    <div id={id} onMouseOver={handleOnMouseOver} onMouseOut={handleOnMouseOut}>{obj}</div>
-  )
-}
   
 render() {
-  const { on } = this.state;
-  let {createBtn} = this;
-
   return (
     <Wrapper>
       <div>
