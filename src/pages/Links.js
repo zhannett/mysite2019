@@ -47,6 +47,18 @@ class Links extends Component {
     this.setState({ newwin: !this.state.newwin });
   }
 
+  renderExternalLink(href, title) {
+    return (
+      <li>
+        <ExternalLink>
+          <a href={href} target={this.state.newwin ? "_blank" : "_self"}>
+            {title}
+          </a>
+        </ExternalLink>
+      </li>
+    );
+  }
+
   render() {
     return (
       <div className="container">
@@ -80,116 +92,50 @@ class Links extends Component {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <ul>
-                        <li>
-                          <ExternalLink>
-                            <Link
-                              to="http://w3.org"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              World Wide Web Consortium
-                            </Link>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://validator.w3.org"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              W3C HTML Validation Service
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://caniuse.com/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Can I Use?
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://frontendmasters.com/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Frontend Masters
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://egghead.io/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Egg Head
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://www.sitepoint.com"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Site Point
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://developer.yahoo.com"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Yahoo Develolper Network
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://www.quirksmode.org"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              www.quirksmode.org
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://www.w3schools.com/browsers/browsers_stats.asp"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Browser Statistics
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="https://www.creativebloq.com/net-magazine"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Net Magazine
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://csszengarden.com"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              CSS Zen Garden
-                            </a>
-                          </ExternalLink>
-                        </li>
+                        {this.renderExternalLink(
+                          "http://w3.org",
+                          "World Wide Web Consortium"
+                        )}
+                        {this.renderExternalLink(
+                          "http://validator.w3.org",
+                          "W3C HTML Validation Service"
+                        )}
+                        {this.renderExternalLink(
+                          "http://caniuse.com/",
+                          "Can I Use?"
+                        )}
+                        {this.renderExternalLink(
+                          "http://frontendmasters.com/",
+                          "Frontend Masters"
+                        )}
+                        {this.renderExternalLink(
+                          "http://egghead.io/",
+                          "Egg Head"
+                        )}
+                        {this.renderExternalLink(
+                          "http://www.sitepoint.com",
+                          "Site Point"
+                        )}
+                        {this.renderExternalLink(
+                          "http://developer.yahoo.com",
+                          "Yahoo Develolper Networkt"
+                        )}
+                        {this.renderExternalLink(
+                          "http://www.quirksmode.org",
+                          "www.quirksmode.org"
+                        )}
+                        {this.renderExternalLink(
+                          "http://www.w3schools.com/browsers/browsers_stats.asp",
+                          "Browser Statistics"
+                        )}
+                        {this.renderExternalLink(
+                          "https://www.creativebloq.com/net-magazine",
+                          "Browser Statistics Net Magazine"
+                        )}
+                        {this.renderExternalLink(
+                          "http://csszengarden.com",
+                          "CSS Zen Garden"
+                        )}
                       </ul>
                     </AccordionItemPanel>
                   </AccordionItem>
@@ -202,39 +148,38 @@ class Links extends Component {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <ul>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://javascript.crockford.com/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Douglas Crockford
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://www.davidflanagan.com"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              David Flanagan
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://howjavascriptworks.com/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              How JavaScript Works
-                            </a>
-                          </ExternalLink>
-                        </li>
+                        {this.renderExternalLink(
+                          "http://javascript.crockford.com/",
+                          "Douglas Crockford"
+                        )}
+                        {this.renderExternalLink(
+                          "http://www.davidflanagan.com",
+                          "David Flanagan"
+                        )}
+                        {this.renderExternalLink(
+                          "http://howjavascriptworks.com/",
+                          "How JavaScript Works"
+                        )}
                       </ul>
                     </AccordionItemPanel>
                   </AccordionItem>
+
+                  <AccordionItem>
+                    <AccordionItemHeading>
+                      <AccordionItemButton>
+                        <span /> AWS
+                      </AccordionItemButton>
+                    </AccordionItemHeading>
+                    <AccordionItemPanel>
+                      <ul>
+                        {this.renderExternalLink(
+                          "https://gist.github.com/stevekinney/6ab02582829f039b6a14c973923909f8",
+                          "AWS for Frontend Engineers"
+                        )}
+                      </ul>
+                    </AccordionItemPanel>
+                  </AccordionItem>
+
                   <AccordionItem>
                     <AccordionItemHeading>
                       <AccordionItemButton>
@@ -243,26 +188,14 @@ class Links extends Component {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <ul>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://html5boilerplate.com/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              HTML5 Boilerplate
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://html5doctor.com/avoiding-common-html5-mistakes/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Avoiding Common HTML5 Mistakes
-                            </a>
-                          </ExternalLink>
-                        </li>
+                      {this.renderExternalLink(
+                          "http://html5boilerplate.com/",
+                          "HTML5 Boilerplate"
+                        )}
+                       {this.renderExternalLink(
+                          "http://html5doctor.com/avoiding-common-html5-mistakes/",
+                          "Avoiding Common HTML5 Mistakes"
+                        )}
                       </ul>
                     </AccordionItemPanel>
                   </AccordionItem>
@@ -274,56 +207,14 @@ class Links extends Component {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <ul>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://www.google.com/webfonts/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Google Web Fonts
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://www.hongkiat.com/blog/beautiful-free-fonts-for-titles-and-headlines/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Fonts for Titles and Headlines
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://html5doctor.com/blockquote-q-cite/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Quote Punctuation
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://css-tricks.com/snippets/css/ribbon/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Ribbon
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              hre="http://tympanus.net/codrops/2012/07/25/modern-block-quote-styles/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Modern Blockquote Styles
-                            </a>
-                          </ExternalLink>
-                        </li>
+                      {this.renderExternalLink(
+                          "http://www.google.com/webfonts/",
+                          "Google Web Fonts"
+                        )}
+                       {this.renderExternalLink(
+                          "http://www.hongkiat.com/blog/beautiful-free-fonts-for-titles-and-headlines/",
+                          "Fonts for Titles and Headlines"
+                        )}
                       </ul>
                     </AccordionItemPanel>
                   </AccordionItem>
@@ -335,237 +226,106 @@ class Links extends Component {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <ul>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="https://smashingmagazine.com/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Smashing Magazine
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="https://www.mdgadvertising.com/resources-and-tools-for-designers/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Resources and Tools for Designers
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="https://99designs.com/blog/trends/web-design-trends-2019/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Current Web Design Trends
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://www.flickr.com/photos/splat/collections/72157600060481506/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Patrick Haney&quot;s collection
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://www.flickr.com/groups/webdesign-inspiration/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Web Design Inspiration flickr Pool
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://vandelaydesign.com/blog/design/flickr-groups-for-designers/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Vandelay Design's list of 99 Flickr groups for
-                              design inspiration.
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="https://zurb.com/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              UI Examples
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://factoryjoe.com/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Chris Messina's web site
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://www.flickr.com/photos/factoryjoe/collections/72157600001823120/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Collection of UI Design on Flickr by Chris Messina
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://designreviver.com/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Design Reviver
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://www.lukew.com/resources/web_form_design.asp"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Web Form Design
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://colorschemedesigner.com/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Color Schema Designer
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="https://color.adobe.com/create"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Adobe Kuler Color Schema
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://www.webdesignerwall.com/tutorials/css-decorative-gallery/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Border Styles for Images
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://www.sitepoint.com/article/eight-definitive-font-stacks/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Typography on the Web
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://mezzoblue.com/tests/revised-image-replacement/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Revised Image Replacement
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="https://kilianvalkhof.com/2017/design/sloped-edges-with-consistent-angle-in-css/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Sloped Edges With Consistent Angle in CSS
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="https://css-tricks.com/creating-non-rectangular-headers/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Creating Non-Rectangular Headers
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://simplebits.com/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Examples of decorative fonts
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://ilovetypography.com"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              I Love Typography
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://designr.it"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Example of decorative text
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://www.alistapart.com/articles/writingainterfacestyleguide/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Writing an Interface Style Guide
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://3oneseven.com/23/milo-web-design-expertise/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Milo Web Design
-                            </a>
-                          </ExternalLink>
-                        </li>
+                      {this.renderExternalLink(
+                          "https://smashingmagazine.com/",
+                          "Smashing Magazine"
+                        )}
+                        {this.renderExternalLink(
+                          "https://smashingmagazine.com/",
+                          "Smashing Magazine"
+                        )}
+                        {this.renderExternalLink(
+                          "https://www.mdgadvertising.com/resources-and-tools-for-designers/",
+                          "Resources and Tools for Designers"
+                        )}
+                       {this.renderExternalLink(
+                          "https://99designs.com/blog/trends/web-design-trends-2019/",
+                          "Current Web Design Trends"
+                        )}
+                       {this.renderExternalLink(
+                          "http://www.flickr.com/photos/splat/collections/72157600060481506/",
+                          "Patrick Haney&quot;s collection"
+                        )}
+                        {this.renderExternalLink(
+                          "http://www.flickr.com/groups/webdesign-inspiration/",
+                          "Web Design Inspiration flickr Pool"
+                        )}
+                       {this.renderExternalLink(
+                          "http://vandelaydesign.com/blog/design/flickr-groups-for-designers/",
+                          "Vandelay Design's list of 99 Flickr groups for design inspiration."
+                        )}
+                       {this.renderExternalLink(
+                          "https://zurb.com/",
+                          "UI Examples"
+                        )}
+                       {this.renderExternalLink(
+                          "https://zurb.com/",
+                          "UI Examples"
+                        )}
+                        {this.renderExternalLink(
+                          "http://factoryjoe.com/",
+                          "Chris Messina's web site"
+                        )}
+                        {this.renderExternalLink(
+                          "http://www.flickr.com/photos/factoryjoe/collections/72157600001823120/",
+                          "Collection of UI Design on Flickr by Chris Messina"
+                        )}
+                       {this.renderExternalLink(
+                          "http://designreviver.com/",
+                          "Design Reviver"
+                        )}
+                       {this.renderExternalLink(
+                          "http://www.lukew.com/resources/web_form_design.asp",
+                          " Web Form Design"
+                        )}
+                        {this.renderExternalLink(
+                          "http://colorschemedesigner.com/",
+                          "Color Schema Designer"
+                        )}
+                       {this.renderExternalLink(
+                          "https://color.adobe.com/create",
+                          "Adobe Kuler Color Schema"
+                        )}
+                       {this.renderExternalLink(
+                          "http://www.webdesignerwall.com/tutorials/css-decorative-gallery/",
+                          "Border Styles for Images"
+                        )}
+                       {this.renderExternalLink(
+                          "http://www.sitepoint.com/article/eight-definitive-font-stacks/",
+                          "Typography on the Web"
+                        )}
+                       {this.renderExternalLink(
+                          "http://mezzoblue.com/tests/revised-image-replacement/",
+                          "Revised Image Replacement"
+                        )}
+                       {this.renderExternalLink(
+                          "https://kilianvalkhof.com/2017/design/sloped-edges-with-consistent-angle-in-css/",
+                          "Sloped Edges With Consistent Angle in CSS"
+                        )}
+                        {this.renderExternalLink(
+                          "https://css-tricks.com/creating-non-rectangular-headers/",
+                          "Creating Non-Rectangular Headers"
+                        )}
+                        {this.renderExternalLink(
+                          "http://simplebits.com/",
+                          "Examples of decorative fonts"
+                        )}
+                        {this.renderExternalLink(
+                          "http://ilovetypography.com",
+                          "I Love Typography"
+                        )}
+                        {this.renderExternalLink(
+                          "http://designr.it",
+                          "Example of decorative text"
+                        )}
+                        {this.renderExternalLink(
+                          "http://www.alistapart.com/articles/writingainterfacestyleguide/",
+                          "Writing an Interface Style Guide"
+                        )}
+                       {this.renderExternalLink(
+                          "http://3oneseven.com/23/milo-web-design-expertise/",
+                          "Milo Web Design"
+                        )}
                       </ul>
                     </AccordionItemPanel>
                   </AccordionItem>
@@ -577,27 +337,14 @@ class Links extends Component {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <ul>
-                        <li />
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://digital-photography-school.com/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              Digital Photography School
-                            </a>
-                          </ExternalLink>
-                        </li>
-                        <li>
-                          <ExternalLink>
-                            <a
-                              href="http://24ways.org/"
-                              target={this.state.newwin ? "_blank" : "_self"}
-                            >
-                              24ways.org
-                            </a>
-                          </ExternalLink>
-                        </li>
+                        {this.renderExternalLink(
+                          "http://digital-photography-school.com/",
+                          "Digital Photography School"
+                        )}
+                        {this.renderExternalLink(
+                          "http://24ways.org/",
+                          "24ways.org"
+                        )}
                       </ul>
                     </AccordionItemPanel>
                   </AccordionItem>
@@ -619,7 +366,8 @@ class Links extends Component {
         <aside className="right-sidebar">
           <div className="quot">
             <blockquote style={{ transform: "rotate(-5deg)" }}>
-              Share your knowledge. It is a way to achieve immortality.
+              <span className="first-letter">S</span>hare your knowledge. It is
+              a way to achieve immortality.
             </blockquote>
           </div>
         </aside>
@@ -785,4 +533,8 @@ https://css-tricks.com/using-svg/
 https://onextrapixel.com/unusual-and-creative-angles-and-shapes-in-website-design/
 
 https://onextrapixel.com/unusual-and-creative-angles-and-shapes-in-website-design/
+
+
+
+
 */

@@ -108,8 +108,13 @@ class Contact extends Component {
 			 include_once("forms/form_contactme.php")  */}
 
         <aside className="right-sidebar">
-          <blockquote>Non progrede est regrede.</blockquote>
-          <blockquote>Not going forward is coming back.</blockquote>
+          <blockquote>
+            <span className="first-letter">N</span>on progrede est regrede.
+          </blockquote>
+          <blockquote>
+            <span className="first-letter">N</span>ot going forward is coming
+            back.
+          </blockquote>
         </aside>
       </div>
     );

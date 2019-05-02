@@ -13,7 +13,7 @@ class Game extends Component {
       <>
         <Header />
         <TopNav />
-        <div role="main" className="flexrow" style={{ width: "100%" }}>
+        <div role="main" style={{ width: "100%" }}>
           <Layout.AsideLeft role="complementary">
             {/*<W3C />*/}
           </Layout.AsideLeft>

@@ -40,26 +40,29 @@ class Home extends Component {
         <aside className="right-sidebar">
           <div>
             <blockquote>
-              Be yourself, everyone else is already taken.
+              <span className="first-letter">B</span>e yourself, everyone else
+              is already taken.
               <cite>Oscar Wilde</cite>
             </blockquote>
             <blockquote>
-              The greatest glory is not in never failing, but in rising up every
-              time we fall.
+              <span className="first-letter">T</span>he greatest glory is not in
+              never failing, but in rising up every time we fall.
               <cite>
                 Confucius,
                 <br />
                 551 BC – 479 BC
               </cite>
             </blockquote>
+
             <div className="title_css3_demo">
               <a
                 href="../assets/video/kinetic-typography-video/"
                 target="_blank"
+                aria-label="CSS3 Demo: Kinetic Typography"
               >
                 <img
                   src="http://janetkulyk.s3.amazonaws.com/img/ad_css3_125x125.png"
-                  alt=""
+                  alt="CSS3 Demo: Kinetic Typography"
                 />
               </a>
             </div>

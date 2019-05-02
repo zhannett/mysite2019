@@ -254,7 +254,7 @@ class Skills extends Component {
                   </span>
                   <ExternalLink>
                     <Link
-                      to="http://janetkulyk.s3.amazonaws.com/img/certificates/css.jpg"
+                      to="img/certificates/css.jpg"
                       target="_blank"
                       alt="CSS2 Certificate"
                     >
@@ -268,7 +268,7 @@ class Skills extends Component {
                   </span>
                   <ExternalLink>
                     <Link
-                      to="http://janetkulyk.s3.amazonaws.com/img/certificates/xml.jpg"
+                      to="img/certificates/xml.jpg"
                       target="_blank"
                       alt="XML Certificate"
                     >
@@ -282,7 +282,7 @@ class Skills extends Component {
                   </span>
                   <ExternalLink>
                     <Link
-                      to="http://janetkulyk.s3.amazonaws.com/img/certificates/php.jpg"
+                      to="img/certificates/php.jpg"
                       target="_blank"
                       alt="PHP4 Certificate"
                     >
@@ -296,7 +296,7 @@ class Skills extends Component {
                   </span>
                   <ExternalLink>
                     <Link
-                      to="http://janetkulyk.s3.amazonaws.com/img/certificates/js.jpg"
+                      to="img/certificates/js.jpg"
                       target="_blank"
                       alt="JavaScript Certificate"
                     >
@@ -310,7 +310,7 @@ class Skills extends Component {
                   </span>
                   <ExternalLink>
                     <Link
-                      to="http://janetkulyk.s3.amazonaws.com/img/certificates/oracle.jpg"
+                      to="img/certificates/oracle.jpg"
                       target="_blank"
                       alt="SQL and PL/SQL Certificate"
                     >
@@ -324,7 +324,7 @@ class Skills extends Component {
                   </span>
                   <ExternalLink>
                     <Link
-                      to="http://janetkulyk.s3.amazonaws.com/img/certificates/sql.jpg"
+                      to="/img/certificates/sql.jpg"
                       target="_blank"
                       alt="MS SQL Server 6.5 Certificate"
                     >
@@ -376,15 +376,17 @@ class Skills extends Component {
         </main>
         <aside className="right-sidebar">
           <blockquote style={{ transform: "rotate(-5deg)" }}>
-            We are all building the future through the work and the projects
-            that we do today.
+            <span className="first-letter">W</span>e are all building the future
+            through the work and the projects that we do today.
           </blockquote>
           <blockquote style={{ transform: "rotate(5deg)" }}>
-            We shape our buildings: thereafter they shape us.
+            <span className="first-letter">W</span>e shape our buildings:
+            thereafter they shape us.
             <cite>Winston Churchill</cite>
           </blockquote>
           <blockquote style={{ transform: "rotate(-5deg)" }}>
-            Judge your success by what you had to give up in order to get it.
+            <span className="first-letter">J</span>udge your success by what you
+            had to give up in order to get it.
           </blockquote>
         </aside>
       </div>

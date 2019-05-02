@@ -57,7 +57,7 @@ export const H1 = styled.h1`
   font-size: 2.5rem;
   text-align: center;
   margin: 0;
-  color: var(--color-salmon);
+  color: var(--color-tomato);
 `;
 
 export const NewWindowChoice = styled.div`
@@ -85,17 +85,4 @@ export const NewWindowChoice = styled.div`
   }
 `;
 
-// clip-path: polygon(0% 0%, 100% 0%, 90% 75%, 0% 75%);
-/*
-
-
-.element {
-  margin: 40px;
-}
-.element>div {
- 
-}mediumorchid: "#d251d4",
-  palevioletred: "#ea639e"
-
- 
-*/
+// export const media = "http://janetkulyk.s3.amazonaws.com/img/";

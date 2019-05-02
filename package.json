@@ -39,7 +39,8 @@
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "format:check": "prettier --list-different \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "parcel src/index.html && aws s3 cp dist/ s3://zhannett.xyz --recursive"
   },
   "browserslist": [
     "last 2 Chrome versions",

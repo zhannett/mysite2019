@@ -61,14 +61,14 @@ const Logo = styled.span`
   a,
   a:hover,
   a:visited {
-    color: var(--color-lightskyblue);
+    color: var(--color-salmon);
     text-decoration: none;
   }
 `;
 
 const Name = styled.span`
   font-size: 2rem;
-  color: var(--color-cornflowerblue);
+  color: var(--color-lightskyblue);
   ${media.desktop`
     font-size: 1.5rem;
   `};

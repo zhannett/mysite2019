@@ -95,8 +95,8 @@ class Welcome extends Component {
         <Promo>
           <div style={{ width: "auto", marginRight: "1rem" }}>
             <p style={{ color: "rgba(0,0,0,0.8)" }}>Hi!</p>
-            <p style={{ color: "rgba(0,0,0,0.6)" }}>I'm Janet Kulyk.</p>
-            <p style={{ color: "rgba(0,0,0,0.4)" }}>
+            <p style={{ color: "rgba(0,0,0,0.7)" }}>I'm Janet Kulyk.</p>
+            <p style={{ color: "rgba(0,0,0,0.6)" }}>
               I'm a Front-End Developer.
             </p>
           </div>
