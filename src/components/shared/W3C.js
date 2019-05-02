@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import styled from "styled-components";
 import { Link } from "@reach/router";
+import ReactTooltip from 'react-tooltip';
 
 import IconCodePen from "../../svgComponents/IconCodePen";
 import IconGithub from "../../svgComponents/IconGithub";
@@ -84,8 +85,9 @@ render() {
           alt="React.js"
           aria-label="React.js"
         >
-          <div style={{ width: "64px", height: "64px", background: "#000" }}>
+          <div data-tip="React.js" style={{ width: "64px", height: "64px", background: "#000" }}>
             <IconReact />
+            <ReactTooltip />
           </div>
         </a>
 
@@ -98,6 +100,7 @@ render() {
           aria-label="Amazon Webservices"
         >
           <div
+            data-tip="Amazon Web Services"
             style={{
               width: "64px",
               height: "64px",
@@ -107,6 +110,7 @@ render() {
             }}
           >
             <IconCloud />
+            <ReactTooltip />
             <span
               style={{
                 display: 'inline-block',
@@ -131,6 +135,7 @@ render() {
           aria-label="Github"
         >
           <div
+            data-tip="Github"
             style={{
               width: "64px",
               height: "64px",
@@ -139,6 +144,7 @@ render() {
             }}
           >
             <IconGithub />
+            <ReactTooltip />
           </div>
         </a>
 
@@ -150,6 +156,7 @@ render() {
           aria-label="CodePen"
         >
           <div
+          data-tip="CodePen"
             style={{
               width: "64px",
               height: "64px",
@@ -159,10 +166,12 @@ render() {
             }}
           >
             <IconCodePen />
+            <ReactTooltip />
           </div>
         </a>
 
         <a
+        data-tip="styled-components"
           href="https://www.styled-components.com/"
           target="_blank"
           rel="noopener"
@@ -183,6 +192,7 @@ render() {
               height="26"
               alt="styled-components"
             />
+            <ReactTooltip />
           </div>
         </a>
       </div>
