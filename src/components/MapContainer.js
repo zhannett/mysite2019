@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import MapWithAMarker from "./MapWithAMarker";
-import keys from "./config/keys";
+// import keys from "./config/keys";
 import media from "../mediaTemplate";
 
 const Map = styled.div`
@@ -23,6 +23,7 @@ class MapContainer extends Component {
   render() {
     return (
       <Map>
+        {/*
         <MapWithAMarker
           googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${
             keys.google_maps_api_key
@@ -32,6 +33,7 @@ class MapContainer extends Component {
           mapElement={<div style={{ height: `100%` }} />}
         />
       </Map>
+      */}
     );
   }
 }
