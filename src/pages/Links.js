@@ -172,11 +172,11 @@ class Links extends Component {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <ul>
-                      {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "https://kentcdodds.com/blog",
                           "Kent C. Dodds blog"
                         )}
-                      {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "https://css-tricks.com/using-react-portals-to-render-children-outside-the-dom-hierarchy/",
                           "Using React Portals to Render Children Outside the DOM Hierarchy"
                         )}
@@ -204,6 +204,10 @@ class Links extends Component {
                           "https://gist.github.com/stevekinney/6ab02582829f039b6a14c973923909f8",
                           "AWS for Frontend Engineers"
                         )}
+                        {this.renderExternalLink(
+                          "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.html",
+                          "Getting Started with CloudFront"
+                        )}
                       </ul>
                     </AccordionItemPanel>
                   </AccordionItem>
@@ -216,11 +220,11 @@ class Links extends Component {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <ul>
-                      {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "http://html5boilerplate.com/",
                           "HTML5 Boilerplate"
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "http://html5doctor.com/avoiding-common-html5-mistakes/",
                           "Avoiding Common HTML5 Mistakes"
                         )}
@@ -235,19 +239,19 @@ class Links extends Component {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <ul>
-                      {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "http://csszengarden.com",
                           "CSS Zen Garden"
                         )}
-                      {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "https://medium.freecodecamp.org/web-fonts-in-2018-f191a48367e8",
                           "How to load web fonts to avoid performance issues and speed up page loading"
                         )}
-                      {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "http://www.google.com/webfonts/",
                           "Google Web Fonts"
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "http://www.hongkiat.com/blog/beautiful-free-fonts-for-titles-and-headlines/",
                           "Fonts for Titles and Headlines"
                         )}
@@ -259,7 +263,6 @@ class Links extends Component {
                           "https://speckyboy.com/css-background-effects/",
                           "10 Snippets for Creating Unique Background Effects with CSS"
                         )}
-                        
                       </ul>
                     </AccordionItemPanel>
                   </AccordionItem>
@@ -271,7 +274,7 @@ class Links extends Component {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <ul>
-                      {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "https://smashingmagazine.com/",
                           "Smashing Magazine"
                         )}
@@ -279,11 +282,11 @@ class Links extends Component {
                           "https://www.mdgadvertising.com/resources-and-tools-for-designers/",
                           "Resources and Tools for Designers"
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "https://99designs.com/blog/trends/web-design-trends-2019/",
                           "Current Web Design Trends"
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "http://www.flickr.com/photos/splat/collections/72157600060481506/",
                           "Patrick Haney&quot;s collection"
                         )}
@@ -291,11 +294,11 @@ class Links extends Component {
                           "http://www.flickr.com/groups/webdesign-inspiration/",
                           "Web Design Inspiration flickr Pool"
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "http://vandelaydesign.com/blog/design/flickr-groups-for-designers/",
                           "Vandelay Design's list of 99 Flickr groups for design inspiration."
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "https://zurb.com/",
                           "UI Examples"
                         )}
@@ -307,11 +310,11 @@ class Links extends Component {
                           "http://www.flickr.com/photos/factoryjoe/collections/72157600001823120/",
                           "Collection of UI Design on Flickr by Chris Messina"
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "http://designreviver.com/",
                           "Design Reviver"
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "http://www.lukew.com/resources/web_form_design.asp",
                           " Web Form Design"
                         )}
@@ -319,23 +322,23 @@ class Links extends Component {
                           "http://colorschemedesigner.com/",
                           "Color Schema Designer"
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "https://color.adobe.com/create",
                           "Adobe Kuler Color Schema"
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "http://www.webdesignerwall.com/tutorials/css-decorative-gallery/",
                           "Border Styles for Images"
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "http://www.sitepoint.com/article/eight-definitive-font-stacks/",
                           "Typography on the Web"
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "http://mezzoblue.com/tests/revised-image-replacement/",
                           "Revised Image Replacement"
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "https://kilianvalkhof.com/2017/design/sloped-edges-with-consistent-angle-in-css/",
                           "Sloped Edges With Consistent Angle in CSS"
                         )}
@@ -359,7 +362,7 @@ class Links extends Component {
                           "http://www.alistapart.com/articles/writingainterfacestyleguide/",
                           "Writing an Interface Style Guide"
                         )}
-                       {this.renderExternalLink(
+                        {this.renderExternalLink(
                           "http://3oneseven.com/23/milo-web-design-expertise/",
                           "Milo Web Design"
                         )}
