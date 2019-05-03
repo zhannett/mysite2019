@@ -11,6 +11,7 @@ import Email from "../svgComponents/Email";
 import Phone from "../svgComponents/Phone";
 import Skype from "../svgComponents/Skype";
 import media from "../mediaTemplate";
+import LinkedIn from "../svgComponents/LinkedIn";
 
 const Blocks = styled.div`
   display: flex;
@@ -63,6 +64,15 @@ class Contact extends Component {
         <main className="content-area page foldtl">
           <div>
             <Layout.H1>Contact Info</Layout.H1>
+            <Layout.LinkedInContainer>
+              <a
+                href="https://www.linkedin.com/in/janetkulyk/"
+                target="_blank"
+                title="Janet Kulyk's LinkedIn Profile"
+              >
+                <LinkedIn />
+              </a>
+            </Layout.LinkedInContainer>
             <Blocks>
               <Vcard>
                 <ul>

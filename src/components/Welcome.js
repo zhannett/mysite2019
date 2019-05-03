@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 
 import * as Layout from "../components/shared/Layout";
 import media from "../mediaTemplate";
+import LinkedIn from "../svgComponents/LinkedIn";
 
 const Portrait = styled.div`
   min-width: 220px;
@@ -88,6 +89,15 @@ class Welcome extends Component {
     return (
       <div>
         <Layout.H1>Welcome!</Layout.H1>
+        <Layout.LinkedInContainer>
+          <a
+            href="https://www.linkedin.com/in/janetkulyk/"
+            target="_blank"
+            title="Janet Kulyk's LinkedIn Profile"
+          >
+            <LinkedIn />
+          </a>
+        </Layout.LinkedInContainer>
         <Promo>
           <div style={{ width: "auto", marginRight: "1rem" }}>
             <p style={{ color: "rgba(0,0,0,0.8)" }}>Hi!</p>

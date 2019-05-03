@@ -85,4 +85,20 @@ export const NewWindowChoice = styled.div`
   }
 `;
 
+export const LinkedInContainer = styled.div`
+  display: inline-block;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: #2977b5;
+  border-radius: 4px;
+  float: right;
+  margin-top: -3rem;
+  svg {
+    position: absolute;
+    left: 6px;
+    top: 6px;
+  }
+`;
+
 // export const media = "http://janetkulyk.s3.amazonaws.com/img/";

@@ -8,6 +8,7 @@ import * as Layout from "../components/shared/Layout";
 import W3C from "../components/shared/W3C";
 import Header from "../components/shared/Header";
 import media from "../mediaTemplate";
+import LinkedIn from "../svgComponents/LinkedIn";
 
 class Home extends Component {
   render() {
@@ -25,16 +26,17 @@ class Home extends Component {
           className="content-area page foldtl"
           style={{ paddingLeft: 0, paddingRight: 0 }}
         >
-          <Welcome />
-
-          {/*<LatestProjects />*/}
-          {/*
+          <div>
+            <Welcome />
+            {/*<LatestProjects />*/}
+            {/*
             <iframe
               src="https://www.facebook.com/plugins/like.php?href=http://www.janetkulyk.com"
               scrolling="no"
               frameBorder="0"
               style={{ border: "none", width: "100%", height: "80px" }}
             */}
+          </div>
         </main>
 
         <aside className="right-sidebar">

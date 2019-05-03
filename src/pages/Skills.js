@@ -12,6 +12,7 @@ import SmallStar from "../svgComponents/SmallStar";
 import MediumOrangeStar from "../svgComponents/MediumOrangeStar";
 import Remote from "../assets/img/remote.gif";
 import RemoteA from "../assets/img/remote_a.gif";
+import LinkedIn from "../svgComponents/LinkedIn";
 
 const DT = styled.div`
   display: block;
@@ -122,6 +123,15 @@ class Skills extends Component {
         <main className="content-area page foldtl" style={{ padding: 0 }}>
           <div>
             <Layout.H1>Professional Skills</Layout.H1>
+            <Layout.LinkedInContainer>
+              <a
+                href="https://www.linkedin.com/in/janetkulyk/"
+                target="_blank"
+                title="Janet Kulyk's LinkedIn Profile"
+              >
+                <LinkedIn />
+              </a>
+            </Layout.LinkedInContainer>
             <dl>
               <DT>Operating Systems:</DT>
               <DD>Mac OS X, Windows XP+</DD>

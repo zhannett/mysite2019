@@ -42,11 +42,14 @@ const Dropdown = styled.ul`
     ${media.tablet`
       line-height: 60px;
       padding: 4px 8px;
-    `};
+    `}
     ${media.phone`
       line-height: 56px;
       padding: 4px;
     `};
+    &:first-of-type {
+      padding-left: 0;
+    }
   ul {
     padding-left: 0;
   }
