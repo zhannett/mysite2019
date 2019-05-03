@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import MapWithAMarker from "./MapWithAMarker";
-import keys from "./config/keys";
+// import keys from "./config/keys";
 import media from "../mediaTemplate";
 
 const Map = styled.div`
@@ -18,6 +18,8 @@ const Map = styled.div`
     height: 260px;
   `};
 `;
+
+const keys.google_maps_api_key = 'abc';
 
 class MapContainer extends Component {
   render() {
