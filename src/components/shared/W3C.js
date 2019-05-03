@@ -50,7 +50,7 @@ class W3C extends Component {
             alt="React.js"
             aria-label="React.js"
           >
-            <LogoContainer data-tip="React.js" style={{ marginTop: "16px" }}>
+            <LogoContainer data-tip="React.js" style={{ marginTop: 0 }}>
               <IconReact />
               <ReactTooltip />
             </LogoContainer>

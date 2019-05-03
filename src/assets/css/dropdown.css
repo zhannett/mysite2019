@@ -49,7 +49,7 @@
 }
 
 /* `Rounded Corners
-----------------------------------------------------------------------------------------------------*/
+  ----------------------------------------------------------------------------------------------------*/
 .dropdown li.dropdown_trigger ul,
 .dropdown li.dropdown_trigger ul li:last-child a {
   border-bottom-left-radius: 5px;
