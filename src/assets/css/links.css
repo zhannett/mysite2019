@@ -10,7 +10,7 @@ a {
 }
 
 a:visited {
-  color: var(--color-mediumturquose);
+  color: #ccc);
   text-decoration: none;
 }
 a:hover {
