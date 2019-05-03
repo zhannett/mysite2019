@@ -19,12 +19,13 @@ const Map = styled.div`
   `};
 `;
 
-const keys.google_maps_api_key = 'abc';
+// const keys.google_maps_api_key = 'abc';
 
 class MapContainer extends Component {
   render() {
     return (
       <Map>
+        {/*
         <MapWithAMarker
           googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${
             keys.google_maps_api_key
@@ -33,6 +34,7 @@ class MapContainer extends Component {
           containerElement={<div style={{ height: `255px` }} />}
           mapElement={<div style={{ height: `100%` }} />}
         />
+        */}
       </Map>
     );
   }
