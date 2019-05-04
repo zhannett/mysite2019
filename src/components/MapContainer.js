@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import MapWithAMarker from "./MapWithAMarker";
 import media from "../mediaTemplate";
-import keys from "./config/keys"; // for dev environment
+// import keys from "./config/keys"; // for dev environment
 
 const Map = styled.div`
   width: 44%;
