@@ -41,8 +41,7 @@
     "format:check": "prettier --list-different \"src/**/*.{js,jsx}\"",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet --fix",
     "test": "echo \"Error: no test specified\"",
-    "build": "parcel build src/index.html",
-    "deploy": "parcel src/index.html && gzip -9 /src/assets/css --recursive && aws s3 cp dist/ s3://zhannett.xyz --recursive"
+    "build": "parcel build src/index.html"
   },
   "browserslist": [
     "last 2 Chrome versions",
