@@ -161,6 +161,31 @@ class W3C extends Component {
             </span>
             <ReactTooltip />
           </LogoContainer>
+
+          <LogoContainer
+            data-tip="Travis"
+            style={{
+              paddingTop: "12px",
+              position: "relative"
+            }}
+          >
+            <span
+              style={{
+                position: "absolute",
+                top: "4px",
+                left: "4px",
+                overflow: "visible"
+              }}
+            >
+              <img
+                src="https://pbs.twimg.com/media/DCcZZIqWAAAqnyo.png"
+                width="56"
+                height="56"
+                alt="Travis"
+              />
+            </span>
+            <ReactTooltip />
+          </LogoContainer>
         </div>
         <VerticalText>Used technologies</VerticalText>
       </Wrapper>
