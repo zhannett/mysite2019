@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import MapWithAMarker from "./MapWithAMarker";
-import keys from "./config/keys";
+// import keys from "./config/keys";
 import media from "../mediaTemplate";
 
 const Map = styled.div`
@@ -18,10 +18,12 @@ const Map = styled.div`
     height: 260px;
   `};
 `;
-
+/*
 if (process.env.NODE_ENV === "development") {
   const google_maps_api_key = keys.google_maps_api_key;
-} else if (process.env.NODE_ENV === "production") {
+} else 
+*/
+if (process.env.NODE_ENV === "production") {
   const google_maps_api_key = $GOOGLE_MAPS_API_KEY;
 }
 
