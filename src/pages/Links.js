@@ -52,7 +52,11 @@ class Links extends Component {
     return (
       <li>
         <ExternalLink>
-          <a href={href} target={this.state.newwin ? "_blank" : "_self"}>
+          <a
+            href={href}
+            rel="noopener"
+            target={this.state.newwin ? "_blank" : "_self"}
+          >
             {title}
           </a>
         </ExternalLink>
