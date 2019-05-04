@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === "development") {
 } else 
 */
 if (process.env.NODE_ENV === "production") {
-  const google_maps_api_key = $GOOGLE_MAPS_API_KEY;
+  const google_maps_api_key = GOOGLE_MAPS_API_KEY;
 }
 
 class MapContainer extends Component {
