@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 import MapWithAMarker from "./MapWithAMarker";
-import keys from "./config/keys";
+// import keys from "./config/keys";
 import media from "../mediaTemplate";
 
 const Map = styled.div`
@@ -19,8 +19,8 @@ const Map = styled.div`
   `};
 `;
 
-var google_maps_api_key =
-  process.env.GOOGLE_MAPS_API_KEY || keys.google_maps_api_key;
+var google_maps_api_key = process.env.GOOGLE_MAPS_API_KEY;
+//  process.env.GOOGLE_MAPS_API_KEY || keys.google_maps_api_key;
 
 class MapContainer extends Component {
   render() {
