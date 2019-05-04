@@ -8,25 +8,24 @@ import LinkedIn from "../svgComponents/LinkedIn";
 const Portrait = styled.div`
   min-width: 220px;
   height: 220px;
-  background: url("http://janetkulyk.s3.amazonaws.com/img/me3.png");
   clip-path: circle(50%);
   ${media.desktop`
     min-width: 190px;
     height: 190px;
     clip-path: circle(%);
-  `};
+  `}
   ${media.tablet`
     min-width: 180px;
     height: 180px;
     clip-path: circle(%);
-  `};
+  `}
   ${media.phone`
     min-width: 170px;
     height: 170px;
     clip-path: circle(45%);
   `};
 `;
-
+// background: url("http://janetkulyk.s3.amazonaws.com/img/me3.png");
 const Promo = styled.div`
   width: auto;
   display: flex;

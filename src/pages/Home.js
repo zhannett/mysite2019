@@ -62,10 +62,12 @@ class Home extends Component {
                 target="_blank"
                 aria-label="CSS3 Demo: Kinetic Typography"
               >
+                {/*
                 <img
                   src="http://janetkulyk.s3.amazonaws.com/img/ad_css3_125x125.png"
                   alt="CSS3 Demo: Kinetic Typography"
                 />
+              */}
               </a>
             </div>
           </div>
