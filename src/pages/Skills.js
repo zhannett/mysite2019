@@ -126,6 +126,7 @@ class Skills extends Component {
             <Layout.LinkedInContainer>
               <a
                 href="https://www.linkedin.com/in/janetkulyk/"
+                rel="noopener"
                 target="_blank"
                 title="Janet Kulyk's LinkedIn Profile"
               >
