@@ -7,6 +7,7 @@ import styled from "@emotion/styled";
 import * as Layout from "../components/shared/Layout";
 import W3C from "../components/shared/W3C";
 import Header from "../components/shared/Header";
+import Footer from "../components/shared/Footer";
 import media from "../mediaTemplate";
 import SmallStar from "../svgComponents/SmallStar";
 import MediumOrangeStar from "../svgComponents/MediumOrangeStar";
@@ -390,6 +391,7 @@ class Skills extends Component {
             {/*<iframe src="https://www.facebook.com/plugins/like.php?href=http://www.janetkulyk.com/skills.php" scrolling="no" frameBorder="0" style="border:none; width:450px; height:80px"></iframe>*/}
           </div>
         </main>
+        <Footer />
         <aside className="right-sidebar">
           <blockquote style={{ transform: "rotate(-5deg)" }}>
             <span className="first-letter">W</span>e are all building the future

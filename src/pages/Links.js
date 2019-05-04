@@ -12,6 +12,7 @@ import {
 import * as Layout from "../components/shared/Layout";
 import "../assets/css/react-accessible-accordion.css";
 import Header from "../components/shared/Header";
+import Footer from "../components/shared/Footer";
 import W3C from "../components/shared/W3C";
 import Remote from "../assets/img/remote.gif";
 import RemoteA from "../assets/img/remote_a.gif";
@@ -402,7 +403,7 @@ class Links extends Component {
             */}
           </div>
         </main>
-
+        <Footer />
         <aside className="right-sidebar">
           <div className="quot">
             <blockquote style={{ transform: "rotate(-5deg)" }}>

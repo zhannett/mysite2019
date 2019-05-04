@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import * as Layout from "../components/shared/Layout";
 import W3C from "../components/shared/W3C";
 import Header from "../components/shared/Header";
+import Footer from "../components/shared/Footer";
 import media from "../mediaTemplate";
 import MediumOrangeStar from "../svgComponents/MediumOrangeStar";
 import LinkedIn from "../svgComponents/LinkedIn";
@@ -99,6 +100,7 @@ class Services extends Component {
             </List>
           </div>
         </main>
+        <Footer />
       </div>
     );
   }

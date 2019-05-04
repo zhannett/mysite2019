@@ -4,6 +4,7 @@ import styled from "styled-components";
 import * as Layout from "../components/shared/Layout";
 import W3C from "../components/shared/W3C";
 import Header from "../components/shared/Header";
+import Footer from "../components/shared/Footer";
 import MapContainer from "../components/MapContainer";
 import Globe from "../svgComponents/Globe";
 import Home from "../svgComponents/Home";
@@ -114,6 +115,7 @@ class Contact extends Component {
             </Blocks>
           </div>
         </main>
+        <Footer />
         {/*
 			<h2>Contact Me</h2>											
 			 include_once("forms/form_contactme.php")  */}
