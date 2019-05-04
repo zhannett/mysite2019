@@ -4,7 +4,7 @@ import styled from "styled-components";
 import * as Layout from "../components/shared/Layout";
 import media from "../mediaTemplate";
 import LinkedIn from "../svgComponents/LinkedIn";
-import myPhoto from "../assets/img/me3.png";
+import myPhoto from "../assets/img/me3.webp";
 
 const Portrait = styled.div`
   min-width: 220px;

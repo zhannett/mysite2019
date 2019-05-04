@@ -8,6 +8,7 @@ import IconReact from "../../svgComponents/IconReact";
 import IconCloud from "../../svgComponents/IconCloud";
 import CSS3 from "../../svgComponents/CSS3";
 import blockquotes from "../../assets/css/blockquotes";
+import StyledComponents from "../../assets/img/styled-components.webp";
 
 const Wrapper = styled.div`
   display: flex;
@@ -133,7 +134,7 @@ class W3C extends Component {
           >
             <LogoContainer style={{ paddingTop: "12px" }}>
               <img
-                src="https://www.styled-components.com/static/icon.png"
+                src={StyledComponents}
                 width="56"
                 height="26"
                 alt="styled-components"
