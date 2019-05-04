@@ -34,6 +34,18 @@ const LogoContainer = styled.div`
   margin-top: 16px;
 `;
 
+const VerticalText = styled.p`
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  letter-spacing: 4px;
+  word-spacing: 8px;
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+  color: var(--color-lightskyblue);
+`;
+
 class W3C extends Component {
   constructor(props) {
     super(props);
@@ -150,7 +162,7 @@ class W3C extends Component {
             <ReactTooltip />
           </LogoContainer>
         </div>
-        <p className="vertical-text">Used technologies</p>
+        <VerticalText>Used technologies</VerticalText>
       </Wrapper>
     );
   }

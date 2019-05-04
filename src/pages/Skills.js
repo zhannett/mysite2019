@@ -14,6 +14,11 @@ import Remote from "../assets/img/remote.gif";
 import RemoteA from "../assets/img/remote_a.gif";
 import LinkedIn from "../svgComponents/LinkedIn";
 
+const DL = styled.div`
+  width: 100%;
+  padding: 4px;
+`;
+
 const DT = styled.div`
   display: block;
   font-weight: 700;
@@ -133,11 +138,11 @@ class Skills extends Component {
                 <LinkedIn />
               </a>
             </Layout.LinkedInContainer>
-            <dl>
+            <DL>
               <DT>Operating Systems:</DT>
               <DD>Mac OS X, Windows XP+</DD>
-            </dl>
-            <dl>
+            </DL>
+            <DL>
               <DT>Programming Languages:</DT>
               <DD>
                 <ul>
@@ -201,40 +206,40 @@ class Skills extends Component {
                   </li>
                 </ul>
               </DD>
-            </dl>
-            <dl>
+            </DL>
+            <DL>
               <DT>Front-End Build Tools:</DT>
               <DD>npm scripts , Yeoman.io, Bower, Grunt, Gulp, ant</DD>
-            </dl>
-            <dl>
+            </DL>
+            <DL>
               <DT>Unit testing:</DT>
               <DD>Jest / Enzyme, Jasmine, Karma / PhantomJS</DD>
-            </dl>
-            <dl>
+            </DL>
+            <DL>
               <DT>Technologies:</DT>
               <DD>XML, JSP, ASP, OOD, RDBMS, AJAX</DD>
-            </dl>
-            <dl>
+            </DL>
+            <DL>
               <DT>Code Review Tools:</DT>
               <DD>Bitbucket , Phabricator</DD>
-            </dl>
-            <dl>
+            </DL>
+            <DL>
               <DT>Technologies:</DT>
               <DD>
                 SPA (Single Page applications), MVC architecture, RESTful web
                 services, mobile web development, XML, ASP, OOD, RDBMS, AJAX,
                 I18N (internationalization), Apache Cordova
               </DD>
-            </dl>
-            <dl>
+            </DL>
+            <DL>
               <DT>Version Control:</DT>
               <DD>GIT, Perforce, CVS, Visual SourceSafe (VSS), StarTeams </DD>
-            </dl>
-            <dl>
+            </DL>
+            <DL>
               <DT>Project Management:</DT>
               <DD>JIRA, Confluence, VersionOne, Agile</DD>
-            </dl>
-            <dl>
+            </DL>
+            <DL>
               <DT>Web:</DT>
               <DD>
                 Web / mobile information architecture, wireframe design, layouts
@@ -246,15 +251,15 @@ class Skills extends Component {
                 enhancement methodology, user-centric development / design,
                 responsive web design, JSLint, Amazon s3
               </DD>
-            </dl>
-            <dl>
+            </DL>
+            <DL>
               <DT>Software:</DT>
               <DD>
                 MS Office (MS Word, MS Excel, MS Access, MS Power Point), Lotus
                 Notes, Adobe Suite, Eclipse, phpMyAdmin, IntelliJ IDEA,
                 WebStorm, Stripe
               </DD>
-            </dl>
+            </DL>
 
             <Layout.H1>Certificates</Layout.H1>
             <Certificates>

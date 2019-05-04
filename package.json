@@ -16,6 +16,7 @@
     "react-dom": "^16.8.6",
     "react-google-maps": "^9.4.5",
     "react-tooltip": "^3.10.0",
+    "src": "^1.1.2",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {

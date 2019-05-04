@@ -230,18 +230,6 @@ main p {
   border: 1px solid grey;
 }
 
-.vertical-text {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: rotate(180deg);
-  letter-spacing: 4px;
-  word-spacing: 8px;
-  text-align: center;
-  margin: 0;
-  font-size: 16px;
-  color: var(--color-lightskyblue);
-}
-
 @media screen and (min-width: 320px) {
   html {
     font-size: calc(16px + 6 * ((100vw - 320px) / 680));
@@ -263,24 +251,4 @@ main p {
   100% {
     background-position: 0% 50%;
   }
-}
-
-dl {
-  width: 100%;
-  padding: 4px;
-}
-dt {
-  display: inline-block;
-  width: 20%;
-  padding: 2px 0;
-  font-weight: bold;
-  font-size: medium;
-  vertical-align: top;
-}
-dd {
-  display: inline-block;
-  width: 70%;
-  padding: 2px 0;
-  font-size: medium;
-  vertical-align: top;
 }

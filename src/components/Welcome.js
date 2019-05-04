@@ -1,14 +1,15 @@
 import React, { Component } from "react";
-import styled from "@emotion/styled";
+import styled from "styled-components";
 
 import * as Layout from "../components/shared/Layout";
 import media from "../mediaTemplate";
 import LinkedIn from "../svgComponents/LinkedIn";
+import myPhoto from "../assets/img/me3.png";
 
 const Portrait = styled.div`
   min-width: 220px;
   height: 220px;
-  background: url("../img/me3.png");
+  background: url(${myPhoto});
   clip-path: circle(50%);
   ${media.desktop`
     min-width: 190px;

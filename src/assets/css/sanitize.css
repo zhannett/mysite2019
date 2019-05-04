@@ -8,20 +8,10 @@
  * 2. Add border box sizing in all browsers (opinionated).
  */
 
-<style > * {
+* {
   box-sizing: border-box;
 }
-html {
-  font-size: 16px;
-  font-family: sans-serif;
-}
-body {
-  background: var(--color-salmon)
-    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQYV2NkQAOMUH4DAwMDCDPABODqMAQAKe4BBZTlhh0AAAAASUVORK5CYII=);
-  -webkit-background-size: auto;
-  -moz-background-size: auto;
-  background-size: auto;
-  font: 1rem/1.4 "Open Sans", Helvetica, Arial, sans-serif;
+
 }
 :root {
   --hue-blue: 220;
@@ -82,6 +72,8 @@ html {
   -ms-text-size-adjust: 100%; /* 5 */
   -webkit-text-size-adjust: 100%; /* 5 */
   word-break: break-word; /* 6 */
+
+  font-size: 16px;
 }
 
 /* Sections
@@ -93,6 +85,12 @@ html {
 
 body {
   margin: 0;
+  background: var(--color-salmon)
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQYV2NkQAOMUH4DAwMDCDPABODqMAQAKe4BBZTlhh0AAAAASUVORK5CYII=);
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  background-size: auto;
+  font: 1rem/1.4 "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 /**
