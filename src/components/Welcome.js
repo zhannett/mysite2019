@@ -8,7 +8,7 @@ import LinkedIn from "../svgComponents/LinkedIn";
 const Portrait = styled.div`
   min-width: 220px;
   height: 220px;
-  background: url("http://janetkulyk.s3.amazonaws.com/img/me3.png");
+  background: url("../img/me3.png");
   clip-path: circle(50%);
   ${media.desktop`
     min-width: 190px;
