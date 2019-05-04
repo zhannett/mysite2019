@@ -15,6 +15,7 @@ deploy:
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: $S3_BUCKET
+  google_maps_api_key: $GOOGLE_MAPS_API_KEY
   skip_cleanup: true
   local-dir: dist
   on:
