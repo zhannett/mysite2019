@@ -19,8 +19,7 @@ const Map = styled.div`
   `};
 `;
 
-var google_maps_api_key =
-  process.env.GOOGLE_MAPS_API_KEY || keys.google_maps_api_key;
+var google_maps_api_key = process.env.GOOGLE_MAPS_API_KEY; //|| keys.google_maps_api_key; - for dev environment
 
 class MapContainer extends Component {
   render() {

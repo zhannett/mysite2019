@@ -65,10 +65,10 @@ const Dropdown = styled.ul`
     `};
   }
   a:hover {
-    color: #000;
+    color: var(--color-tomato);
   }
   a:active {
-    color: var(--color-tomato);
+    color: #000;
     background-color: transparent;
   }
   a:hover:before {

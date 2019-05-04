@@ -53,7 +53,6 @@ body {
   --hue-blue: 220;
   --hue-salmon: 13;
   --complimentary-hue: calc(var(--hue-blue) - 180);
-  --color-royalblue: #3a8fda;
   --color-mediumturquose: #6adfd6;
   --color-orchid: #df52cb;
   --color-indianred: #e94363;
@@ -63,6 +62,7 @@ body {
   --color-salmon: hsl(var(--hue-salmon), 80%, 65%); /* #fb8261 */
   --color-tomato: #e74a33;
   --color-lightpink: #f4b7a3;
+  --color-royalblue: #254de4;
 }
 
 h1,
@@ -393,16 +393,16 @@ a {
   background: transparent;
   cursor: pointer;
 }
-
 a:visited {
-  color: #ccc);
+  color: #777;
+  color: hsl(220, 50%, 65%);
   text-decoration: none;
 }
 a:hover {
-  color: var(--color-salmon);
+  color: var(--color-tomato);
 }
 a:active {
-  color: var(--color-salmon);
+  color: #444;
 }
 
 a.external {
@@ -459,4 +459,3 @@ a:hover:before {
   background: var(--color-salmon);
 }
 /* Hypertext Links end */
-
