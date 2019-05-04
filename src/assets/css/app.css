@@ -1,3 +1,39 @@
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url("../fonts/open-sans-v16-latin-regular.woff2") format("woff2"),
+    url("../fonts/open-sans-v16-latin-regular.woff") format("woff");
+}
+
+/* open-sans-700 - latin */
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: local("Open Sans Bold"), local("OpenSans-Bold"),
+    url("../fonts/open-sans-v16-latin-700.woff2") format("woff2"),
+    url("../fonts/open-sans-v16-latin-700.woff") format("woff");
+}
+
+/* rouge-script-regular - latin */
+@font-face {
+  font-family: "Rouge Script";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: local("Rouge Script"), local("RougeScript-Regular"),
+    url("../fonts/rouge-script-v7-latin-regular.woff2") format("woff2"),
+    url("../fonts/rouge-script-v7-latin-regular.woff") format("woff");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -252,3 +288,175 @@ main p {
     background-position: 0% 50%;
   }
 }
+
+.right-sidebar blockquote {
+  position: relative;
+  border: 1px solid #000;
+  border-radius: 4px;
+  page-break-inside: avoid;
+  background: var(--color-salmon);
+  color: #333;
+  font-family: Georgia, serif;
+  font-size: 0.75rem;
+  font-style: italic;
+  line-height: 1.4 !important;
+  margin: 1rem 1rem 3rem 1rem;
+  text-align: left;
+  z-index: 600;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.right-sidebar blockquote:before {
+  content: "\201C";
+  color: var(--color-tomato);
+  font-size: 8rem;
+  font-weight: 700;
+  opacity: 0.3;
+  position: absolute;
+  top: -1.5rem;
+  left: -0.3rem;
+  text-shadow: none;
+  z-index: -300;
+}
+
+.right-sidebar blockquote span {
+  line-height: 1.4;
+}
+
+.right-sidebar blockquote .first-letter {
+  color: #444;
+}
+
+.right-sidebar blockquote .author {
+  color: #444;
+  font: italic 0.7em/1.8 Georgia, serif;
+  padding: 1rem;
+}
+
+.right-sidebar blockquote cite {
+  display: block;
+  color: #000;
+  font-size: 0.9rem;
+  margin: 15px 0 0 0;
+  text-align: right;
+}
+
+.right-sidebar blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+.right-sidebar blockquote:nth-child(odd) {
+  transform: rotate(5deg);
+}
+
+.right-sidebar blockquote:nth-child(even) {
+  transform: rotate(-5deg);
+}
+
+/* */
+.page {
+  background: linear-gradient(top, #fff 0%, #e5e5e5 100%);
+}
+
+.foldtl {
+  position: relative;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+
+.foldtl:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0p;
+  height: 0p;
+  border-bottom: 70px solid #eee;
+  border-left: 70px solid #ccc; /*S et to background color, not transparent! */
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+@media all and (max-width: 540px) {
+  .page {
+    background: #e5e5e5;
+  }
+  .foldtl:before {
+    display: none;
+  }
+}
+
+/* Hypertext Links start */
+a {
+  text-decoration: none;
+  position: relative;
+  transition: all 1s;
+  color: var(--color-cornflowerblue);
+  background: transparent;
+  cursor: pointer;
+}
+
+a:visited {
+  color: #ccc);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--color-salmon);
+}
+a:active {
+  color: var(--color-salmon);
+}
+
+a.external {
+  padding-left: 15px;
+  background: url(http://janetkulyk.s3.amazonaws.com/img/remote.gif) center left
+    no-repeat;
+}
+a.external:hover {
+  background: #e2e2e2 url(http://janetkulyk.s3.amazonaws.com/img/remote_a.gif)
+    center left no-repeat;
+}
+a.mysite {
+  background: none;
+}
+
+.mailto a:link {
+  font-size: mediumm;
+  line-height: 1.4rem;
+}
+.mailto a:hover {
+  text-decoration: none;
+  background-color: #e2e2e2;
+}
+
+a.pdflink {
+  color: #090;
+  background: url(../img/pdf.png) no-repeat 0 0;
+}
+span a.pdflink {
+  padding-left: 25px;
+  font-weight: normal;
+  display: block;
+  height: 16px;
+  color: #090;
+}
+
+a img {
+  text-decoration: none;
+}
+
+a:before {
+  content: "";
+  width: 0;
+  height: 0.1em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 1s;
+}
+
+a:hover:before {
+  width: 100%;
+  left: 0;
+  background: var(--color-salmon);
+}
+/* Hypertext Links end */
+

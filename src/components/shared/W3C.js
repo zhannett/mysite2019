@@ -7,7 +7,6 @@ import IconGithub from "../../svgComponents/IconGithub";
 import IconReact from "../../svgComponents/IconReact";
 import IconCloud from "../../svgComponents/IconCloud";
 import CSS3 from "../../svgComponents/CSS3";
-import blockquotes from "../../assets/css/blockquotes";
 import StyledComponents from "../../assets/img/styled-components.webp";
 
 const Wrapper = styled.div`
