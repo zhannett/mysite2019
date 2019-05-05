@@ -213,6 +213,14 @@ class Skills extends Component {
               <DD>npm scripts , Yeoman.io, Bower, Grunt, Gulp, ant</DD>
             </DL>
             <DL>
+              <DT>AWS:</DT>
+              <DD>s3, Cloudfront</DD>
+            </DL>
+            <DL>
+              <DT>DevOps:</DT>
+              <DD>Travis CI</DD>
+            </DL>
+            <DL>
               <DT>Unit testing:</DT>
               <DD>Jest / Enzyme, Jasmine, Karma / PhantomJS</DD>
             </DL>

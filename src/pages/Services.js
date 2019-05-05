@@ -55,8 +55,7 @@ class Services extends Component {
             <List>
               <li>
                 <MediumOrangeStar /> <span>Web Services:</span> domain
-                registration, web hosting, concept development, content
-                management (maintenance)
+                registration, web hosting, cloud hosting, concept development
               </li>
               <li>
                 <MediumOrangeStar /> <span>Web Design:</span> concept design and
@@ -76,26 +75,26 @@ class Services extends Component {
               <li>
                 <MediumOrangeStar /> <span>Website Assessment Report:</span>{" "}
                 reviewing every aspect of your online presence and recommend
-                cost-effective improvements.
+                cost-effective improvements
               </li>
               <li>
                 <MediumOrangeStar />{" "}
                 <span>Website Performance Optimization:</span> analyzing the
                 speed of your website, make recommendations, and implement
-                solutions to make your website fast.
+                solutions to make your website fast
               </li>
               <li>
                 <MediumOrangeStar /> <span>Internationalization:</span>{" "}
                 developing multi-lingual websites or add additional languagues
-                to your existing website.
+                to your existing website
               </li>
               <li>
                 <MediumOrangeStar /> <span>Google Analytics</span> for your
-                website.
+                website
               </li>
               <li>
                 <MediumOrangeStar /> <span>Email Newsletters:</span> design,
-                build, sending.
+                build, sending
               </li>
             </List>
           </div>
