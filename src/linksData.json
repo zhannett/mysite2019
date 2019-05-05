@@ -1,0 +1,261 @@
+{
+  "allLinks": [
+    {
+      "section": "GeneralLinks",
+      "links": [
+        {
+          "url": "http://w3.org",
+          "title": "World Wide Web Consortium"
+        },
+        {
+          "url": "http://validator.w3.org",
+          "title": "W3C HTML Validation Service"
+        },
+        {
+          "url": "http://caniuse.com/",
+          "title": "Can I Use?"
+        },
+        {
+          "url": "http://frontendmasters.com/",
+          "title": "Frontend Masters"
+        },
+        {
+          "url": "http://egghead.io/",
+          "title": "Egg Head"
+        },
+        {
+          "url": "http://www.sitepoint.com/",
+          "title": "Site Point"
+        },
+        {
+          "url": "http://developer.yahoo.com",
+          "title": "Yahoo Develolper Network"
+        },
+        {
+          "url": "http://www.quirksmode.org",
+          "title": "www.quirksmode.org"
+        },
+        {
+          "url": "http://www.w3schools.com/browsers/browsers_stats.asp",
+          "title": "Browser Statistics"
+        },
+        {
+          "url": "https://www.creativebloq.com/net-magazine",
+          "title": "Browser Statistics Net Magazine"
+        }
+      ]
+    },
+    {
+      "section": "JavaScript",
+      "links": [
+        {
+          "url": "http://javascript.crockford.com/",
+          "title": "Douglas Crockford"
+        },
+        {
+          "url": "http://www.davidflanagan.com",
+          "title": "How JavaScript Works"
+        },
+        {
+          "url": "https://medium.com/@jsmuster/awesome-es6-features-by-example-58974b356955",
+          "title": "Awesome ES6 Features By Example"
+        },
+        {
+          "url": "http://www.davidflanagan.com",
+          "title": "David Flanagan"
+        }
+      ]
+    },
+    {
+      "section": "React.js",
+      "links": [
+        {
+          "url": "https://kentcdodds.com/blog",
+          "title": "Kent C. Dodds blog"
+        },
+        {
+          "url": "https://css-tricks.com/using-react-portals-to-render-children-outside-the-dom-hierarchy/",
+          "title": "Using React Portals to Render Children Outside the DOM Hierarchy"
+        }
+      ]
+    },
+    {
+      "section": "Redux",
+      "links": [
+        {
+          "url": "https://medium.com/@jsmuster/understanding-reducers-d0f934aceccd",
+          "title": "Understanding Reducers from scratch"
+        },
+        {
+          "url": "https://medium.com/@jsmuster/using-redux-standalone-497aa85981c1",
+          "title": "Using Redux standalone"
+        }
+      ]
+    },
+    {
+      "section": "AWS",
+      "links": [
+        {
+          "url": "https://gist.github.com/stevekinney/6ab02582829f039b6a14c973923909f8",
+          "title": "AWS for Frontend Engineers"
+        },
+        {
+          "url": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/GettingStarted.html",
+          "title": "Getting Started with CloudFront"
+        }
+      ]
+    },
+    {
+      "section": "HTML5",
+      "links": [
+        {
+          "url": "http://html5boilerplate.com/",
+          "title": "HTML5 Boilerplate"
+        },
+        {
+          "url": "http://html5doctor.com/avoiding-common-html5-mistakes/",
+          "title": "Avoiding Common HTML5 Mistakes"
+        }
+      ]
+    },
+    {
+      "section": "HTML5",
+      "links": [
+        {
+          "url": "http://csszengarden.com",
+          "title": "CSS Zen Garden"
+        },
+        {
+          "url": "https://medium.freecodecamp.org/web-fonts-in-2018-f191a48367e8",
+          "title": "How to load web fonts to avoid performance issues and speed up page loading"
+        },
+        {
+          "url": "http://www.google.com/webfonts/",
+          "title": "Google Web Fonts"
+        },
+        {
+          "url": "http://www.hongkiat.com/blog/beautiful-free-fonts-for-titles-and-headlines/",
+          "title": "Fonts for Titles and Headlines"
+        },
+        {
+          "url": "https://www.sarasoueidan.com/blog/hex-rgb-to-hsl/",
+          "title": "On Switching from HEX & RGB to HSL"
+        },
+        {
+          "url": "https://speckyboy.com/css-background-effects/",
+          "title": "10 Snippets for Creating Unique Background Effects with CSS"
+        }
+      ]
+    },
+    {
+      "section": "Web Design Inspitation Resources",
+      "links": [
+        {
+          "url": "https://smashingmagazine.com/",
+          "title": "Smashing Magazine"
+        },
+        {
+          "url": "https://www.mdgadvertising.com/resources-and-tools-for-designers/",
+          "title": "Resources and Tools for Designers"
+        },
+        {
+          "url": "https://99designs.com/blog/trends/web-design-trends-2019/",
+          "title": "Current Web Design Trends"
+        },
+        {
+          "url": "http://www.flickr.com/photos/splat/collections/72157600060481506/",
+          "title": "Patrick Haney&quot;s collection"
+        },
+        {
+          "url": "http://www.flickr.com/groups/webdesign-inspiration/",
+          "title": "Web Design Inspiration flickr Pool"
+        },
+        {
+          "url": "http://vandelaydesign.com/blog/design/flickr-groups-for-designers/",
+          "title": "Vandelay Design's list of 99 Flickr groups for design inspiration"
+        },
+        {
+          "url": "https://zurb.com/",
+          "title": "UI Examples"
+        },
+        {
+          "url": "http://factoryjoe.com/",
+          "title": "Chris Messina's web site"
+        },
+        {
+          "url": "http://www.flickr.com/photos/factoryjoe/collections/72157600001823120/",
+          "title": "Collection of UI Design on Flickr by Chris Messina"
+        },
+        {
+          "url": "http://designreviver.com/",
+          "title": "Design Reviver"
+        },
+        {
+          "url": "http://www.lukew.com/resources/web_form_design.asp",
+          "title": "Web Form Design"
+        },
+        {
+          "url": "http://colorschemedesigner.com/",
+          "title": "Color Schema Designer"
+        },
+        {
+          "url": "https://color.adobe.com/create",
+          "title": "Adobe Kuler Color Schema"
+        },
+        {
+          "url": "http://www.webdesignerwall.com/tutorials/css-decorative-gallery/",
+          "title": "Border Styles for Images"
+        },
+        {
+          "url": "http://www.sitepoint.com/article/eight-definitive-font-stacks/",
+          "title": "Typography on the Web"
+        },
+        {
+          "url": "http://mezzoblue.com/tests/revised-image-replacement/",
+          "title": "Revised Image Replacement"
+        },
+        {
+          "url": "https://kilianvalkhof.com/2017/design/sloped-edges-with-consistent-angle-in-css/",
+          "title": "Sloped Edges With Consistent Angle in CSS"
+        },
+        {
+          "url": "https://css-tricks.com/creating-non-rectangular-headers/",
+          "title": "Creating Non-Rectangular Headers"
+        },
+        {
+          "url": "http://simplebits.com/",
+          "title": "Examples of decorative fonts"
+        },
+        {
+          "url": "http://ilovetypography.com",
+          "title": "I Love Typography"
+        },
+        {
+          "url": "http://designr.it",
+          "title": "Example of decorative text"
+        },
+        {
+          "url": "http://www.alistapart.com/articles/writingainterfacestyleguide/",
+          "title": "Writing an Interface Style Guide"
+        },
+        {
+          "url": "http://3oneseven.com/23/milo-web-design-expertise/",
+          "title": "Milo Web Design"
+        }
+      ]
+    },
+    {
+      "section": "Photography",
+      "links": [
+        {
+          "url": "http://digital-photography-school.com/",
+          "title": "Digital Photography School"
+        },
+        {
+          "url": "http://24ways.org/",
+          "title": "24ways.org"
+        }
+      ]
+    }
+  ]
+}
