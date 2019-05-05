@@ -15,6 +15,7 @@ import * as Layout from "../components/shared/Layout";
 import "../assets/css/react-accessible-accordion.css";
 import Header from "../components/shared/Header";
 import Footer from "../components/shared/Footer";
+import NewWindow from "../components/NewWindow";
 import W3C from "../components/shared/W3C";
 import Remote from "../assets/img/remote.gif";
 import RemoteA from "../assets/img/remote_a.gif";
@@ -43,11 +44,11 @@ class Links extends Component {
       newwin: true
     };
 
-    this.toggleCheckboxChange = this.toggleCheckboxChange.bind(this);
+    this.handleCheckboxChange = this.handleCheckboxChange.bind(this);
   }
 
-  toggleCheckboxChange() {
-    this.setState({ newwin: !this.state.newwin });
+  handleCheckboxChange(data) {
+    this.setState({ newwin: data });
   }
 
   renderSection(indx, section, links) {
@@ -103,10 +104,7 @@ class Links extends Component {
         >
           <div style={{ paddingLeft: 0, paddingRight: 0 }}>
             <Layout.H1>Web Pro Links</Layout.H1>
-            <NewWindow
-              num={this.state.newwin}
-              toggleCheckboxChange={this.toggleCheckboxChange}
-            />
+            <NewWindow onCheckboxChange={this.handleCheckboxChange} />
             <Lists>
               <div className="links-container">
                 <Accordion allowZeroExpanded="true">
@@ -130,7 +128,7 @@ class Links extends Component {
         <Footer />
         <aside className="right-sidebar">
           <div className="quot">
-            <blockquote style={{ transform: "rotate(-5deg)" }}>
+            <blockquote>
               <span className="first-letter">S</span>hare your knowledge. It is
               a way to achieve immortality.
             </blockquote>
@@ -139,25 +137,6 @@ class Links extends Component {
       </div>
     );
   }
-}
-
-function NewWindow({ checkboxChecked, toggleCheckboxChange }) {
-  return (
-    <div data-behavior="linksInNewWindow">
-      <Layout.NewWindowChoice>
-        <form className="newwindowlinks">
-          <fieldset>
-            <input
-              type="checkbox"
-              value={checkboxChecked}
-              onChange={toggleCheckboxChange}
-            />
-            <label htmlFor="newwin">Open links in new window?</label>
-          </fieldset>
-        </form>
-      </Layout.NewWindowChoice>
-    </div>
-  );
 }
 
 export default Links;

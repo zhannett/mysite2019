@@ -25,11 +25,11 @@
 
 .accordion__button:before {
   display: inline-block;
+  vertical-align: middle;
   content: "";
   height: 8px;
   width: 8px;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: 0 1rem;
   border-bottom: 2px solid currentColor;
   border-right: 2px solid currentColor;
   transform: rotate(-45deg);

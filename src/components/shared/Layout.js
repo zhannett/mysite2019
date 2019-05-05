@@ -76,12 +76,13 @@ export const NewWindowChoice = styled.div`
   label {
     width: 80%;
     text-align: left;
-    font-weight: smaller;
+    font-weight: medium;
     color: #626262;
     font-style: italic;
   }
   input {
-    margin: 4px 8px 0 0;
+    vertical-align: middle;
+    margin: 0 8px 0 0;
   }
 `;
 
