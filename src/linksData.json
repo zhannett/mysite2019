@@ -78,8 +78,8 @@
           "title": "Using React Portals to Render Children Outside the DOM Hierarchy"
         },
         {
-          "url": "https://stackoverflow.com/questions/38394015/how-to-pass-data-from-child-component-to-its-parent-in-reactjs",
-          "title": "How to pass data from child component to its parent in ReactJS?"
+          "url": "https://codepen.io/PiotrBerebecki/pen/dpRdKP",
+          "title": "React JS Pass data from input in Child to Parent"
         },
         {
           "url": "https://react.tips/checkboxes-in-react-16/",

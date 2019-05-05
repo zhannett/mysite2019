@@ -24,12 +24,13 @@ class NewWindow extends Component {
   render() {
     return (
       <form>
-        <fieldset>
+        <fieldset style={{ border: "none" }}>
           <label htmlFor="newwin">
             <input
               type="checkbox"
               onChange={this.handleCheckboxState}
               checked={this.state.checked}
+              style={{ verticalAlign: "middle", marginRight: "8px" }}
             />
             Open links in new window?
           </label>

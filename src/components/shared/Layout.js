@@ -64,7 +64,7 @@ export const NewWindowChoice = styled.div`
   fieldset {
     padding: 4px 0;
     margin: 0 0 1rem 1rem;
-    border: none;
+    border-width: 0;
     ${media.phone`
       width: calc(100% - 16px);
       padding-left: 16px;
@@ -82,7 +82,6 @@ export const NewWindowChoice = styled.div`
   }
   input {
     vertical-align: middle;
-    margin: 0 8px 0 0;
   }
 `;
 
