@@ -46,12 +46,10 @@ const Promo = styled.div`
       line-height: 1.2;
   `};
     ${media.tablet`
-      font-size: 1.2rem;
       line-height: 1;
       margin: 32px 0;
   `};
     ${media.phone`
-      font-size: 1.2rem;
       line-height: 1;
       margin: 16px 0;
     `};
