@@ -50,9 +50,9 @@ class Links extends Component {
     this.setState({ newwin: !this.state.newwin });
   }
 
-  renderSection(section, links) {
+  renderSection(indx, section, links) {
     return (
-      <AccordionItem>
+      <AccordionItem key={indx}>
         <AccordionItemHeading>
           <AccordionItemButton>
             <span />
@@ -61,16 +61,18 @@ class Links extends Component {
         </AccordionItemHeading>
         <AccordionItemPanel>
           <ul>
-            {links.map(item => this.renderExternalLink(item.url, item.title))}
+            {links.map((item, index) =>
+              this.renderExternalLink(index, item.url, item.title)
+            )}
           </ul>
         </AccordionItemPanel>
       </AccordionItem>
     );
   }
 
-  renderExternalLink(href, title) {
+  renderExternalLink(index, href, title) {
     return (
-      <li>
+      <li key={index}>
         <ExternalLink>
           <a
             href={href}
@@ -108,8 +110,8 @@ class Links extends Component {
             <Lists>
               <div className="links-container">
                 <Accordion allowZeroExpanded="true">
-                  {linksData.allLinks.map(item =>
-                    this.renderSection(item.section, item.links)
+                  {linksData.allLinks.map((item, indx) =>
+                    this.renderSection(indx, item.section, item.links)
                   )}
                 </Accordion>
               </div>
