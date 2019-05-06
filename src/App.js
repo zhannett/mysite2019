@@ -8,6 +8,8 @@ import Services from "./pages/Services";
 import Skills from "./pages/Skills";
 import Links from "./pages/Links";
 import Contact from "./pages/Contact";
+import TODO from "./pages/TODO";
+
 /*
 import Education from "./pages/Education";
 import Portfolio from "./pages/Portfolio";
@@ -43,6 +45,7 @@ class App extends Component {
           <Skills path="/skills" />
           <Links path="/links" />
           <Contact path="/contact" />
+          <TODO path="/TODO" />
         </Router>
       </Wrapper>
     );
