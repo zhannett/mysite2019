@@ -120,7 +120,7 @@ main p {
   text-align: center;
 }
 .container {
-  max-width: 1920px;
+  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 96px auto 220px;

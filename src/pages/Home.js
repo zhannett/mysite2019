@@ -10,6 +10,8 @@ import Header from "../components/shared/Header";
 import Footer from "../components/shared/Footer";
 import media from "../mediaTemplate";
 import LinkedIn from "../svgComponents/LinkedIn";
+import "../assets/css/sanitize.css";
+import "../assets/css/app.css";
 
 class Home extends Component {
   render() {
