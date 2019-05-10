@@ -1,11 +1,12 @@
 import React from "react";
-import styled from "@emotion/styled";
+import styled from "styled-components";
 
 const DateTime = styled.div`
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   color: #444;
+  font-size: small;
 `;
 
 const options = {

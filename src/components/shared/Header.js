@@ -40,8 +40,6 @@ const Banner = styled.div`
   `};
 `;
 
-// background: linear-gradient(90deg, #2743c0, #ea639e);
-
 const Logo = styled.span`
   font-size: 2rem;
   font-weight: 700;
@@ -93,7 +91,6 @@ const DateTime = styled.div`
   font-family: Georgia, "Times New Roman", Times, serif;
   text-align: right;
   background: transparent;
-  padding: 0 10px 5px 0;
   color: #666;
 `;
 
@@ -109,7 +106,7 @@ class Header extends Component {
           </Logo>
           <Name>Janet's Personal Website</Name>
           {/*<DateTime>
-            <Clock />
+            <Clock style={{ width: "100px", height: "100px" }} />
           </DateTime>*/}
         </Banner>
         <TopNav />

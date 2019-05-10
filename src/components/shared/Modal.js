@@ -1,6 +1,23 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import PropTypes from "prop-types";
+import React, { useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
+
+const modalRoot = document.getElementById("modal");
+
+const Modal = ({ children }) => {
+  const elRef = useRef(null);
+  if (!elRef.current) {
+    elRef.current = document.createElement("div");
+  }
+
+  useEffect(() => {
+    modalRoot.appendChild(elRef.current);
+    return () => modalRoot.removeChild(elRef.current);
+  }, []);
+
+  return createPortal(<div>{children}</div>, elRef.current);
+};
+
+export default Modal;
 
 /*
 
@@ -33,29 +50,3 @@ import PropTypes from "prop-types";
   border: 0;
 }
 */
-
-const modalRoot = document.getElementById("root");
-
-export default class Modal extends React.PureComponent {
-  static propTypes = {
-    children: PropTypes.node
-  };
-
-  constructor(props) {
-    super(props);
-    this.el = document.createElement("div");
-  }
-
-  componentDidMount() {
-    modalRoot.appendChild(this.el);
-  }
-
-  componentWillUnmount() {
-    modalRoot.removeChild(this.el);
-  }
-
-  render() {
-    return ReactDOM.createPortal(this.props.children, this.el);
-  }
-}
-// This component does nothing else than creating a div and mouting it as a child of #root into our DOM.

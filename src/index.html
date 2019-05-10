@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <!--
-	if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip')) ob_start("ob_gzhandler"); else ob_start();
-	header('Content-Type:text/html; charset=utf-8');
-	$media = 'http://janetkulyk.s3.amazonaws.com/img/';
-	$google_site_verification = '<meta name="google-site-verification" content="mA36N0CD7ALdTKHKR-ShMKKlwH8qDLEjWxwzbV47UnU" />';
-	include("inc/header_new.inc.php");
--->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,6 +18,11 @@
       name="description"
       content="Personal web site of Janet (Zhanna) Kulyk and JK IT Consulting Ltd., web / mobile development, design, front-end engineering"
     />
+    <meta
+      name="google-site-verification"
+      content="mA36N0CD7ALdTKHKR-ShMKKlwH8qDLEjWxwzbV47UnU"
+    />
+    ';
   </head>
   <body>
     <div id="root">
@@ -38,7 +36,7 @@
         />
       </div>
     </div>
-    <div id="modal-root"></div>
+    <div id="modal"></div>
     <script src="./App.js"></script>
 
     <!--

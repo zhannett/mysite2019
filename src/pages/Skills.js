@@ -8,6 +8,7 @@ import * as Layout from "../components/shared/Layout";
 import W3C from "../components/shared/W3C";
 import Header from "../components/shared/Header";
 import Footer from "../components/shared/Footer";
+import Certificates from "../components/Certificates";
 import media from "../mediaTemplate";
 import SmallStar from "../svgComponents/SmallStar";
 import MediumOrangeStar from "../svgComponents/MediumOrangeStar";
@@ -54,35 +55,6 @@ const DD = styled.div`
   }
 `;
 
-const Overlay = styled.div`
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 200;
-`;
-
-const ExternalLink = styled.div`
-  display: inline;
-  flex-direction: row;
-  padding-left: 16px;
-  background: url(${Remote}) no-repeat 0 8px;
-  ${media.phone`
-    flex-direction: column;
-  `};
-  &:hover {
-    background: #e2e2e2 url(${RemoteA}) no-repeat 0 8px;
-  }
-`;
-
-const Certificates = styled.div`
-  ul {
-    list-style: none;
-    a {
-      font-size: large;
-    }
-  }
-`;
-
 const ToggleContent = ({ toggle, content }) => {
   const [isShown, setIsShown] = React.useState(false);
   const hide = () => setIsShown(false);
@@ -94,12 +66,6 @@ const ToggleContent = ({ toggle, content }) => {
     </>
   );
 };
-
-const Modal = ({ children }) =>
-  ReactDOM.createPortal(
-    <div className="modal">{children}</div>,
-    document.getElementById("modal-root")
-  );
 
 class Skills extends Component {
   constructor(props) {
@@ -122,7 +88,6 @@ class Skills extends Component {
         <header className="header">
           <Header />
         </header>
-
         <aside className="left-sidebar">
           <W3C />
         </aside>
@@ -258,7 +223,7 @@ class Skills extends Component {
                 compatibility; SEO; web / mobile applications performance
                 optimization, Google Analytics, StatsCounter, progressive
                 enhancement methodology, user-centric development / design,
-                responsive web design, JSLint, Amazon s3
+                responsive web design, JSLint, Amazon s3, Amazon Cloudfront
               </DD>
             </DL>
             <DL>
@@ -269,133 +234,7 @@ class Skills extends Component {
                 WebStorm, Stripe
               </DD>
             </DL>
-
-            <Layout.H1>Certificates</Layout.H1>
-            <Certificates>
-              <ul data-behavior="smartLinks" style={{ paddingLeft: 0 }}>
-                <li>
-                  <span>
-                    <strong>2005</strong> -{" "}
-                  </span>
-                  <ExternalLink>
-                    <Link
-                      to="img/certificates/css.jpg"
-                      target="_blank"
-                      alt="CSS2 Certificate"
-                    >
-                      <strong>CSS2</strong> Certificate
-                    </Link>
-                  </ExternalLink>
-                </li>
-                <li>
-                  <span>
-                    <strong>2005</strong> -{" "}
-                  </span>
-                  <ExternalLink>
-                    <Link
-                      to="img/certificates/xml.jpg"
-                      target="_blank"
-                      alt="XML Certificate"
-                    >
-                      <strong>XML</strong> Certificate
-                    </Link>
-                  </ExternalLink>
-                </li>
-                <li>
-                  <span>
-                    <strong>2005</strong> -{"  "}
-                  </span>
-                  <ExternalLink>
-                    <Link
-                      to="img/certificates/php.jpg"
-                      target="_blank"
-                      alt="PHP4 Certificate"
-                    >
-                      <strong>PHP4</strong> Certificate
-                    </Link>
-                  </ExternalLink>
-                </li>
-                <li>
-                  <span>
-                    <strong>2005</strong> - {"  "}
-                  </span>
-                  <ExternalLink>
-                    <Link
-                      to="img/certificates/js.jpg"
-                      target="_blank"
-                      alt="JavaScript Certificate"
-                    >
-                      <strong>JavaScript</strong> Certificate
-                    </Link>
-                  </ExternalLink>
-                </li>
-                <li>
-                  <span>
-                    <strong>2002</strong> -{" "}
-                  </span>
-                  <ExternalLink>
-                    <Link
-                      to="img/certificates/oracle.jpg"
-                      target="_blank"
-                      alt="SQL and PL/SQL Certificate"
-                    >
-                      <strong>SQL and PL/SQL</strong> Certificate
-                    </Link>
-                  </ExternalLink>
-                </li>
-                <li>
-                  <span>
-                    <strong>2000</strong> -{" "}
-                  </span>
-                  <ExternalLink>
-                    <Link
-                      to="/img/certificates/sql.jpg"
-                      target="_blank"
-                      alt="MS SQL Server 6.5 Certificate"
-                    >
-                      <strong>MS SQL Server 6.5</strong> Certificate
-                    </Link>
-                  </ExternalLink>
-                </li>
-                {/*
-                <li>
-                  <p>
-                    Click to reveal a secret:
-                    <ToggleContent
-                      toggle={show => <button onClick={show}>Open</button>}
-                      content={hide => (
-                        <>
-                          {this.renderOverlay()}
-                          <Modal>
-                            <div className="overlay">
-                              <div className="modal-content">
-                                <img
-                                  src="http://janetkulyk.s3.amazonaws.com/img/certificates/sql.jpg"
-                                  title=""
-                                />
-                                <button onClick={hide}>Close</button>
-                              </div>
-                            </div>
-                          </Modal>
-                        </>
-                      )}
-                    />
-                  </p>
-                </li>
-                      */}
-              </ul>
-            </Certificates>
-
-            {/*
-                    <ul className="gallery">
-                        <li><a href="http://janetkulyk.s3.amazonaws.com/img/certificates/sql.jpg" className="certimg" rel="prettyPhoto[gallery]" title="SQL Server Certificate"><img src="<?php echo $media ?>certificates/sql-thumb.jpg" width="120" height="91" alt="SQL Server Certificate" /></a></li>
-                        <li><a href="http://janetkulyk.s3.amazonaws.com/img/certificates/php.jpg" className="certimg" rel="prettyPhoto[gallery]" title="PHP Certificate"><img src="<?php echo $media ?>certificates/php-thumb.jpg"  width="120" height="91"alt="PHP Certificate" /></a></li>
-                        <li><a href="http://janetkulyk.s3.amazonaws.com/img/certificates/js.jpg" className="certimg" rel="prettyPhoto[gallery]" title="JavaScript Certificate"><img src="<?php echo $media ?>certificates/js-thumb.jpg" width="120" height="91" alt="JavaScript Certificate" /></a></li>
-                        <li><a href="http://janetkulyk.s3.amazonaws.com/img/certificates/xml.jpg" className="certimg" rel="prettyPhoto[gallery]" title="XML Certificate"><img src="<?php echo $media ?>certificates/xml-thumb.jpg" width="120" height="91" alt="XML Certificate" /></a></li>
-                        <li><a href="http://janetkulyk.s3.amazonaws.com/img/certificates/css.jpg" className="certimg" rel="prettyPhoto[gallery]" title="CSS2 Certificate"><img src="<?php echo $media ?>certificates/css-thumb.jpg" width="120" height="91"alt="CSS2 Certificate" /></a></li>
-                        <li><a href="http://janetkulyk.s3.amazonaws.com/img/certificates/oracle.jpg" className="certimg" rel="prettyPhoto[gallery]" title="Oracle certificate"><img src="<?php echo $media ?>certificates/oracle-thumb.jpg" width="91" height="120"alt="Oracle certificate" /></a></li>
-                    </ul>
-                    */}
+            <Certificates />
             {/*<iframe src="https://www.facebook.com/plugins/like.php?href=http://www.janetkulyk.com/skills.php" scrolling="no" frameBorder="0" style="border:none; width:450px; height:80px"></iframe>*/}
           </div>
         </main>
