@@ -15,12 +15,12 @@ const Portrait = styled.div`
     min-width: 190px;
     height: 190px;
     clip-path: circle(%);
-  `};
+  `}
   ${media.tablet`
     min-width: 180px;
     height: 180px;
     clip-path: circle(%);
-  `};
+  `}
   ${media.phone`
     min-width: 170px;
     height: 170px;
@@ -44,11 +44,11 @@ const Promo = styled.div`
     ${media.desktop`
       font-size: 1.2rem;
       line-height: 1.2;
-  `};
+  `}
     ${media.tablet`
       line-height: 1;
       margin: 32px 0;
-  `};
+  `}
     ${media.phone`
       line-height: 1;
       margin: 16px 0;
