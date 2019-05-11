@@ -492,17 +492,18 @@ a:hover:before {
   border-radius: 4px;
   text-align: center;
   overflow: scroll;
+  position: relative;
 }
 
 #modal > div img {
   max-width: 800px;
 }
 
-#modal .close {
+#modal button.close {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  color: white;
+  top: 8px;
+  right: 8px;
+  color: red;
   background: none;
   border: 0;
   cursor: pointer;

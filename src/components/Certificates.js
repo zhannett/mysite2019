@@ -8,6 +8,7 @@ import Modal from "../components/shared/Modal";
 import media from "../mediaTemplate";
 import Remote from "../assets/img/remote.gif";
 import RemoteA from "../assets/img/remote_a.gif";
+import CloseSmall from "../svgComponents/CloseSmall";
 
 const Overlay = styled.div`
   width: 100%;
@@ -175,11 +176,9 @@ class Certificates extends Component {
         {this.state.showModal ? (
           <Modal>
             <button onClick={this.toggleModal} className="close">
-              Close
+              <CloseSmall />
             </button>
-            <div>
-              <img src={this.state.url} style={{ width: "90%" }} title="" />
-            </div>
+            <img src={this.state.url} style={{ width: "90%" }} title="" />
           </Modal>
         ) : null}
         {/*<iframe src="https://www.facebook.com/plugins/like.php?href=http://www.janetkulyk.com/skills.php" scrolling="no" frameBorder="0" style="border:none; width:450px; height:80px"></iframe>*/}
