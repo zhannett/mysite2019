@@ -494,6 +494,10 @@ a:hover:before {
   overflow: scroll;
 }
 
+#modal > div img {
+  max-width: 800px;
+}
+
 #modal .close {
   position: absolute;
   top: 20px;
