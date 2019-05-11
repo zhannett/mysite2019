@@ -118,7 +118,10 @@ class W3C extends Component {
             alt="CodePen"
             aria-label="CodePen"
           >
-            <LogoContainer data-tip="CodePen" style={{ paddingTop: "8px" }}>
+            <LogoContainer
+              data-tip="CodePen"
+              style={{ paddingTop: "8px", paddingLeft: "8px" }}
+            >
               <IconCodePen />
               <ReactTooltip />
             </LogoContainer>
@@ -131,7 +134,7 @@ class W3C extends Component {
             rel="noopener"
             alt="styled-components"
           >
-            <LogoContainer style={{ paddingTop: "12px" }}>
+            <LogoContainer style={{ paddingTop: "14px", paddingLeft: '4px' }}>
               <img
                 src={StyledComponents}
                 width="56"
