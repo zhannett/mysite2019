@@ -165,7 +165,7 @@ main p {
   margin-right: 0;
   background-color: #fff;
   border-radius: 0.625rem;
-  place-self: center;
+  /*place-self: center;*/
   display: inline-flex;
   align-items: center;
   justify-content: center;

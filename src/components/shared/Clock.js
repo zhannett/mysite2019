@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
+
+import media from "../../mediaTemplate";
 
 const DateTime = styled.div`
   display: flex;
@@ -7,6 +9,15 @@ const DateTime = styled.div`
   justify-content: flex-end;
   color: #444;
   font-size: small;
+  ${media.tablet`
+    display: none;
+  `}
+`;
+
+const Time = styled.div`
+  width: 72px;
+  padding-left: 16px;
+  text-align: left;
 `;
 
 const options = {
@@ -16,40 +27,20 @@ const options = {
   day: "numeric"
 };
 
-class Clock extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      date: new Date().toLocaleDateString("en-US", options),
-      time: new Date().toLocaleTimeString("en-US", { hour12: false })
-    };
-  }
+const Clock = () => {
+  const [time, setTime] = useState(new Date());
 
-  componentDidMount() {
-    this.intervalID = setInterval(() => this.tick(), 1000);
-  }
+  useEffect(() => {
+    const timer = setTimeout(setTime(new Date()), 1000);
+    return () => clearTimeout(timer);
+  }, [time, setTime]);
 
-  componentWillUnmount() {
-    clearInterval(this.intervalID);
-  }
-
-  tick() {
-    this.setState({
-      date: new Date().toLocaleDateString("en-US", options),
-      time: new Date().toLocaleTimeString("en-US", { hour12: false })
-    });
-  }
-
-  render() {
-    return (
-      <DateTime>
-        <div>{this.state.date}</div>
-        <div style={{ width: "72px", paddingLeft: "16px", textAlign: "left" }}>
-          {this.state.time}
-        </div>
-      </DateTime>
-    );
-  }
-}
+  return (
+    <DateTime>
+      <div>{new Date().toLocaleDateString("en-US", options)}</div>
+      <Time>{time.toLocaleTimeString("en-US", { hour12: false })}</Time>
+    </DateTime>
+  );
+};
 
 export default Clock;

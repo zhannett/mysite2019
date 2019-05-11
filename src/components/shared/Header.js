@@ -24,6 +24,8 @@ const Banner = styled.div`
   background-color: rgb(53, 57, 61);
   z-index: 100;
   border-bottom-right-radius: 100px;
+  align-items: center;
+  
   ${media.desktop`
     height: 60px;
     line-height: 60px;
@@ -88,32 +90,30 @@ background: linear-gradient(
 */
 
 const DateTime = styled.div`
-  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: right;
   background: transparent;
-  color: #666;
+  color: #444;
+  margin-right: -24px;
 `;
 
-class Header extends Component {
-  render() {
-    return (
-      <>
-        <Banner role="banner">
-          <Logo>
-            <Link to="/" style={{ background: "transparent" }}>
-              &lt;JK /&gt;
-            </Link>
-          </Logo>
-          <Name>Janet's Personal Website</Name>
-          {/*<DateTime>
-            <Clock style={{ width: "100px", height: "100px" }} />
-          </DateTime>*/}
-        </Banner>
-        <TopNav />
-      </>
-    );
-  }
-}
+const Header = () => {
+  return (
+    <>
+      <Banner role="banner">
+        <Logo>
+          <Link to="/" style={{ background: "transparent" }}>
+            &lt;JK /&gt;
+          </Link>
+        </Logo>
+        <Name>Janet's Personal Website</Name>
+        <DateTime>
+          <Clock style={{ width: "100px", height: "100px" }} />
+        </DateTime>
+      </Banner>
+      <TopNav />
+    </>
+  );
+};
 
 export default Header;
 
@@ -130,7 +130,6 @@ header::after {
 header::after polygon {
   fill: white;
 }
-
 
 mediumorchid: "#d251d4",
   palevioletred: "#ea639e"
