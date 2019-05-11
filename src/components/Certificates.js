@@ -19,12 +19,12 @@ const Overlay = styled.div`
 const ExternalLink = styled.div`
   display: inline;
   padding-left: 16px;
-  background: rgb(248, 248, 248) url(${Remote}) no-repeat 4px 12px;
+  background: rgb(248, 248, 248) url(${Remote}) no-repeat 4px 6px;
   ${media.phone`
     flex-direction: column;
   `};
   &:hover {
-    background: rgb(248, 248, 248) url(${RemoteA}) no-repeat 4px 12px;
+    background: rgb(248, 248, 248) url(${RemoteA}) no-repeat 4px 6px;
   }
 `;
 
