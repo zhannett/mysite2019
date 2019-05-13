@@ -134,7 +134,7 @@ class W3C extends Component {
             rel="noopener"
             alt="styled-components"
           >
-            <LogoContainer style={{ paddingTop: "14px", paddingLeft: '4px' }}>
+            <LogoContainer style={{ paddingTop: "14px", paddingLeft: "4px" }}>
               <img
                 src={StyledComponents}
                 width="56"
