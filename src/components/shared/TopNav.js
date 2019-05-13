@@ -118,7 +118,7 @@ class TopNav extends Component {
 		</Dropdown>
         -->*/}
         <Dropdown>
-          <li>
+          <li style={{ position: "relative" }}>
             <Link to="/links">Links</Link>
           </li>
         </Dropdown>

@@ -34,21 +34,6 @@
     url("../fonts/rouge-script-v7-latin-regular.woff") format("woff");
 }
 
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 16px;
-  font-family: sans-serif;
-}
-body {
-  background: var(--color-salmon)
-    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQYV2NkQAOMUH4DAwMDCDPABODqMAQAKe4BBZTlhh0AAAAASUVORK5CYII=);
-  -webkit-background-size: auto;
-  -moz-background-size: auto;
-  background-size: auto;
-  font: 1rem/1.4 "Open Sans", Helvetica, Arial, sans-serif;
-}
 :root {
   --hue-blue: 220;
   --hue-salmon: 13;
@@ -256,13 +241,6 @@ main p {
   }
 }
 
-.first-letter {
-  font-size: 2rem;
-  line-height: 0.7;
-  color: var(--color-tomato);
-  font-family: "Rouge Script";
-}
-
 .modal {
   position: fixed;
   top: 50%;
@@ -326,9 +304,6 @@ main p {
 
 .right-sidebar blockquote span {
   line-height: 1.4;
-}
-
-.right-sidebar blockquote .first-letter {
   color: #444;
 }
 

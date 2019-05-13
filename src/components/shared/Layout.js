@@ -25,6 +25,13 @@ export const Sidebar = styled.aside`
   padding: 1rem;
 `;
 
+export const FirstLetter = styled.span`
+  font-size: 2rem;
+  line-height: 0.7;
+  color: #e74a33;
+  font-family: "Rouge Script";
+`;
+
 export const SponsorsWrapper = styled.div`
   grid-area: sponsors;
 `;

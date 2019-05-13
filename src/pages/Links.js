@@ -36,6 +36,13 @@ const ExternalLink = styled.div`
   }
 `;
 
+const FirstLetter = styled.span`
+  font-size: 2rem;
+  line-height: 0.7;
+  color: var(--color-tomato);
+  font-family: "Rouge Script";
+`;
+
 class Links extends Component {
   constructor(props) {
     super(props);
@@ -129,8 +136,8 @@ class Links extends Component {
         <aside className="right-sidebar">
           <div className="quot">
             <blockquote>
-              <span className="first-letter">S</span>hare your knowledge. It is
-              a way to achieve immortality.
+              <FirstLetter>S</FirstLetter>hare your knowledge. It is a way to
+              achieve immortality.
             </blockquote>
           </div>
         </aside>

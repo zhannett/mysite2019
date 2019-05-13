@@ -89,7 +89,7 @@ background: linear-gradient(
   -webkit-text-fill-color: transparent;
 */
 
-const DateTime = styled.div`
+const DateTimeContainer = styled.div`
   text-align: right;
   background: transparent;
   color: #444;
@@ -106,9 +106,9 @@ const Header = () => {
           </Link>
         </Logo>
         <Name>Janet's Personal Website</Name>
-        <DateTime>
+        <DateTimeContainer>
           <Clock style={{ width: "100px", height: "100px" }} />
-        </DateTime>
+        </DateTimeContainer>
       </Banner>
       <TopNav />
     </>

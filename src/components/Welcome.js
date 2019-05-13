@@ -83,62 +83,62 @@ const Focus = styled.div`
   }
 `;
 
-class Welcome extends Component {
-  render() {
-    return (
-      <div>
-        <Layout.H1>Welcome!</Layout.H1>
-        <Layout.LinkedInContainer>
-          <a
-            href="https://www.linkedin.com/in/janetkulyk/"
-            rel="noopener"
-            target="_blank"
-            title="Janet Kulyk's LinkedIn Profile"
-          >
-            <LinkedIn />
-          </a>
-        </Layout.LinkedInContainer>
-        <Promo>
-          <div style={{ width: "auto", marginRight: "1rem" }}>
-            <p style={{ color: "rgba(0,0,0,0.8)" }}>Hi!</p>
-            <p style={{ color: "rgba(0,0,0,0.7)" }}>I'm Janet Kulyk.</p>
-            <p style={{ color: "rgba(0,0,0,0.6)" }}>
-              I'm a Front-End Developer.
-            </p>
-          </div>
-          <Portrait />
-        </Promo>
-        <Focus>
-          <p>
-            <span className="first-letter">I</span> build web and mobile web
-            applications for large corporations and small businesses. Sometimes
-            I work as a one-person web agency.
-          </p>
-          <p>
-            <span className="first-letter">M</span>y current focus is Full Stack
-            JavaScript application development for all spectrum of devices,
-            responsive web design, performance optimization, web standards, user
-            experience, accessibility, cross-browser and cross-platform
-            development.
-          </p>
-          <p>
-            <span className="first-letter">T</span>his web site highlights some
-            of my professional skills, contains reference materials and links,
-            has some fun pages, and serves as a sandbox for playing with new
-            code.
-          </p>
-          <p>
-            <span className="first-letter">I</span> speak English, Russian, and
-            Ukrainian.
-          </p>
-          <p style={{ fontSize: "small" }}>
-            JK IT Consulting, Ltd. is registered in Ontario, Canada, but the web
-            allows me to collaborate no matter where you are in the world.
-          </p>
-        </Focus>
-      </div>
-    );
-  }
-}
+const FirstLetter = styled.span`
+  font-size: 2rem;
+  line-height: 0.7;
+  color: var(--color-tomato);
+  font-family: "Rouge Script";
+`;
+
+const Welcome = () => {
+  return (
+    <div>
+      <Layout.H1>Welcome!</Layout.H1>
+      <Layout.LinkedInContainer>
+        <a
+          href="https://www.linkedin.com/in/janetkulyk/"
+          rel="noopener"
+          target="_blank"
+          title="Janet Kulyk's LinkedIn Profile"
+        >
+          <LinkedIn />
+        </a>
+      </Layout.LinkedInContainer>
+      <Promo>
+        <div style={{ width: "auto", marginRight: "1rem" }}>
+          <p style={{ color: "rgba(0,0,0,0.8)" }}>Hi!</p>
+          <p style={{ color: "rgba(0,0,0,0.7)" }}>I'm Janet Kulyk.</p>
+          <p style={{ color: "rgba(0,0,0,0.6)" }}>I'm a Front-End Developer.</p>
+        </div>
+        <Portrait />
+      </Promo>
+      <Focus>
+        <p>
+          <FirstLetter>I</FirstLetter> build web and mobile web applications for
+          large corporations and small businesses. Sometimes I work as a
+          one-person web agency.
+        </p>
+        <p>
+          <FirstLetter>M</FirstLetter>y current focus is Full Stack JavaScript
+          application development for all spectrum of devices, responsive web
+          design, performance optimization, web standards, user experience,
+          accessibility, cross-browser and cross-platform development.
+        </p>
+        <p>
+          <FirstLetter>T</FirstLetter>his web site highlights some of my
+          professional skills, contains reference materials and links, has some
+          fun pages, and serves as a sandbox for playing with new code.
+        </p>
+        <p>
+          <FirstLetter>I</FirstLetter> speak English, Russian, and Ukrainian.
+        </p>
+        <p style={{ fontSize: "small" }}>
+          JK IT Consulting, Ltd. is registered in Ontario, Canada, but the web
+          allows me to collaborate no matter where you are in the world.
+        </p>
+      </Focus>
+    </div>
+  );
+};
 
 export default Welcome;

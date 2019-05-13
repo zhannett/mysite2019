@@ -48,6 +48,13 @@ const Vcard = styled.div`
   }
 `;
 
+const FirstLetter = styled.span`
+  font-size: 2rem;
+  line-height: 0.7;
+  color: var(--color-tomato);
+  font-family: "Rouge Script";
+`;
+
 class Contact extends Component {
   constructor(props) {
     super(props);
@@ -122,11 +129,10 @@ class Contact extends Component {
 
         <aside className="right-sidebar">
           <blockquote>
-            <span className="first-letter">N</span>on progrede est regrede.
+            <FirstLetter>N</FirstLetter>on progrede est regrede.
           </blockquote>
           <blockquote>
-            <span className="first-letter">N</span>ot going forward is coming
-            back.
+            <FirstLetter>N</FirstLetter>ot going forward is coming back.
           </blockquote>
         </aside>
       </div>

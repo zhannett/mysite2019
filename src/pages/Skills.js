@@ -55,6 +55,13 @@ const DD = styled.div`
   }
 `;
 
+const FirstLetter = styled.span`
+  font-size: 2rem;
+  line-height: 0.7;
+  color: var(--color-tomato);
+  font-family: "Rouge Script";
+`;
+
 const ToggleContent = ({ toggle, content }) => {
   const [isShown, setIsShown] = React.useState(false);
   const hide = () => setIsShown(false);
@@ -241,17 +248,17 @@ class Skills extends Component {
         <Footer />
         <aside className="right-sidebar">
           <blockquote style={{ transform: "rotate(-5deg)" }}>
-            <span className="first-letter">W</span>e are all building the future
-            through the work and the projects that we do today.
+            <FirstLetter>W</FirstLetter>e are all building the future through
+            the work and the projects that we do today.
           </blockquote>
           <blockquote style={{ transform: "rotate(5deg)" }}>
-            <span className="first-letter">W</span>e shape our buildings:
-            thereafter they shape us.
+            <FirstLetter>W</FirstLetter>e shape our buildings: thereafter they
+            shape us.
             <cite>Winston Churchill</cite>
           </blockquote>
           <blockquote style={{ transform: "rotate(-5deg)" }}>
-            <span className="first-letter">J</span>udge your success by what you
-            had to give up in order to get it.
+            <FirstLetter>J</FirstLetter>udge your success by what you had to
+            give up in order to get it.
           </blockquote>
         </aside>
       </div>
