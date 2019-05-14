@@ -10,6 +10,7 @@ import Header from "../components/shared/Header";
 import Footer from "../components/shared/Footer";
 import media from "../mediaTemplate";
 import LinkedIn from "../svgComponents/LinkedIn";
+import "../assets/css/sanitize.css";
 import "../assets/css/app.css";
 import Modal from "../components/shared/Modal";
 import CloseSmall from "../svgComponents/CloseSmall";

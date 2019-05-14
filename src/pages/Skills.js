@@ -101,16 +101,16 @@ class Skills extends Component {
         <main className="content-area page foldtl" style={{ padding: 0 }}>
           <div>
             <Layout.H1>Professional Skills</Layout.H1>
-            <Layout.LinkedInContainer>
-              <a
-                href="https://www.linkedin.com/in/janetkulyk/"
-                rel="noopener"
-                target="_blank"
-                title="Janet Kulyk's LinkedIn Profile"
-              >
+            <a
+              href="https://www.linkedin.com/in/janetkulyk/"
+              rel="noopener"
+              target="_blank"
+              title="Janet Kulyk's LinkedIn Profile"
+            >
+              <Layout.LinkedInContainer>
                 <LinkedIn />
-              </a>
-            </Layout.LinkedInContainer>
+              </Layout.LinkedInContainer>
+            </a>
             <DL>
               <DT>Operating Systems:</DT>
               <DD>Mac OS X, Windows XP+</DD>

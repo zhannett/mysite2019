@@ -94,16 +94,17 @@ const Welcome = () => {
   return (
     <div>
       <Layout.H1>Welcome!</Layout.H1>
-      <Layout.LinkedInContainer>
-        <a
-          href="https://www.linkedin.com/in/janetkulyk/"
-          rel="noopener"
-          target="_blank"
-          title="Janet Kulyk's LinkedIn Profile"
-        >
+      <a
+        href="https://www.linkedin.com/in/janetkulyk/"
+        rel="noopener"
+        target="_blank"
+        title="Janet Kulyk's LinkedIn Profile"
+      >
+        <Layout.LinkedInContainer>
           <LinkedIn />
-        </a>
-      </Layout.LinkedInContainer>
+        </Layout.LinkedInContainer>
+      </a>
+
       <Promo>
         <div style={{ width: "auto", marginRight: "1rem" }}>
           <p style={{ color: "rgba(0,0,0,0.8)" }}>Hi!</p>

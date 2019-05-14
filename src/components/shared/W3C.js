@@ -78,15 +78,13 @@ class W3C extends Component {
           >
             <LogoContainer
               data-tip="Amazon Web Services"
-              style={{ writingMode: "horizontal-tb" }}
+              style={{ writingMode: "horizontal-tb", position: "relative" }}
             >
               <IconCloud />
-              <ReactTooltip />
               <span
                 style={{
-                  display: "inline-block",
-                  width: "40px",
                   position: "absolute",
+                  width: "40px",
                   top: "22px",
                   left: "14px",
                   fontSize: "16px",
@@ -95,6 +93,7 @@ class W3C extends Component {
               >
                 AWS
               </span>
+              <ReactTooltip />
             </LogoContainer>
           </a>
 
