@@ -133,13 +133,10 @@ class W3C extends Component {
             rel="noopener"
             alt="styled-components"
           >
-            <LogoContainer style={{ paddingTop: "14px", paddingLeft: "4px" }}>
-              <img
-                src={StyledComponents}
-                width="56"
-                height="26"
-                alt="styled-components"
-              />
+            <LogoContainer style={{ paddingTop: "10px", paddingLeft: "4px" }}>
+              <span style={{ color: "#fff", fontSize: "16px" }}>&lt;</span>
+              <span style={{ fontSize: "28px" }}> 💅</span>
+              <span style={{ color: "#fff", fontSize: "16px" }}>&gt;</span>
               <ReactTooltip />
             </LogoContainer>
           </a>
