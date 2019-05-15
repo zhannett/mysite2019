@@ -7,7 +7,7 @@ import IconGithub from "../../svgComponents/IconGithub";
 import IconReact from "../../svgComponents/IconReact";
 import IconCloud from "../../svgComponents/IconCloud";
 import CSS3 from "../../svgComponents/CSS3";
-import iconTravis from "../../assets/img/travis.png";
+import iconTravis from "../../assets/img/travis.webp";
 import StyledComponents from "../../assets/img/styled-components.webp";
 
 const Wrapper = styled.div`
