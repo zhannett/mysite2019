@@ -24,6 +24,7 @@ const Nav = styled.div`
     height: 56px;
     justify-content: space-between;
     padding: 0 1.5rem;
+    font-size: small;
   `};
 `;
 
@@ -49,6 +50,9 @@ const Dropdown = styled.ul`
     `};
     &:first-of-type {
       padding-left: 0;
+    }
+    &:last-of-type {
+      padding-right: 0;
     }
   ul {
     padding-left: 0;

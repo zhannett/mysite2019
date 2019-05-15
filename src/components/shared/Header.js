@@ -71,9 +71,12 @@ const Name = styled.span`
   color: var(--color-lightskyblue);
   ${media.desktop`
     font-size: 1.5rem;
-  `};
+  `}
   ${media.tablet`
     font-size: 1.2rem;
+  `}
+  ${media.phone`
+    font-size: 1.1rem;
   `};
 `;
 /*

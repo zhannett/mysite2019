@@ -7,25 +7,20 @@ import LinkedIn from "../svgComponents/LinkedIn";
 import myPhoto from "../assets/img/me3.webp";
 
 const Portrait = styled.div`
-  min-width: 220px;
-  height: 220px;
-  background: url(${myPhoto});
-  clip-path: circle(50%);
+  height: 200px;
   ${media.desktop`
-    min-width: 190px;
     height: 190px;
-    clip-path: circle(%);
   `}
   ${media.tablet`
-    min-width: 180px;
-    height: 180px;
-    clip-path: circle(%);
+    height: 136px;
   `}
   ${media.phone`
-    min-width: 170px;
-    height: 170px;
-    clip-path: circle(45%);
+    height: 120px;
   `};
+  img {
+    height: 100%;
+    border-radius: 50%;
+  }
 `;
 
 const Promo = styled.div`
@@ -111,7 +106,9 @@ const Welcome = () => {
           <p style={{ color: "rgba(0,0,0,0.7)" }}>I'm Janet Kulyk.</p>
           <p style={{ color: "rgba(0,0,0,0.6)" }}>I'm a Front-End Developer.</p>
         </div>
-        <Portrait />
+        <Portrait>
+          <img src={myPhoto} alt="My Photo" />
+        </Portrait>
       </Promo>
       <Focus>
         <p>
