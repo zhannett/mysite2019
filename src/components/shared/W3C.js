@@ -7,6 +7,7 @@ import IconGithub from "../../svgComponents/IconGithub";
 import IconReact from "../../svgComponents/IconReact";
 import IconCloud from "../../svgComponents/IconCloud";
 import CSS3 from "../../svgComponents/CSS3";
+import iconTravis from "../../assets/img/travis.png";
 import StyledComponents from "../../assets/img/styled-components.webp";
 
 const Wrapper = styled.div`
@@ -176,12 +177,7 @@ class W3C extends Component {
                 overflow: "visible"
               }}
             >
-              <img
-                src="https://pbs.twimg.com/media/DCcZZIqWAAAqnyo.png"
-                width="56"
-                height="56"
-                alt="Travis"
-              />
+              <img src={iconTravis} width="56" height="56" alt="Travis" />
             </span>
             <ReactTooltip />
           </LogoContainer>
