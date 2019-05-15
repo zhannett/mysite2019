@@ -4,7 +4,8 @@ import styled from "styled-components";
 import * as Layout from "../components/shared/Layout";
 import media from "../mediaTemplate";
 import LinkedIn from "../svgComponents/LinkedIn";
-import myPhoto from "../assets/img/me3.webp";
+import myPhotoWebp from "../assets/img/me3.webp";
+import myPhotoPng from "../assets/img/me3.png";
 
 const Portrait = styled.div`
   height: 200px;
@@ -107,7 +108,11 @@ const Welcome = () => {
           <p style={{ color: "rgba(0,0,0,0.6)" }}>I'm a Front-End Developer.</p>
         </div>
         <Portrait>
-          <img src={myPhoto} alt="My Photo" />
+          <picture>
+            <source srcset={myPhotoWebp} type="image/webp" />
+            <source srcset={myPhotoPng} type="image/png" />
+            <img src={myPhotoPng} alt="My Photo" />
+          </picture>
         </Portrait>
       </Promo>
       <Focus>
