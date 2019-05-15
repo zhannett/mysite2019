@@ -31,7 +31,7 @@ const Wrapper = styled.div`
 const LogoContainer = styled.div`
   width: 64px;
   height: 64px;
-  background: #000;
+  background: #333;
   margin-top: 16px;
 `;
 
