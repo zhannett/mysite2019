@@ -23,7 +23,7 @@ class NewWindow extends Component {
 
   render() {
     return (
-      <form>
+      <form form-action="self">
         <fieldset style={{ border: "none" }}>
           <label htmlFor="newwin">
             <input

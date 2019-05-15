@@ -120,7 +120,7 @@ function NewWindow({ checkboxChecked, toggleCheckboxChange }) {
   return (
     <div data-behavior="linksInNewWindow">
       <Layout.NewWindowChoice>
-        <form className="newwindowlinks">
+        <form form-action="self" className="newwindowlinks">
           <fieldset>
             <input
               type="checkbox"
