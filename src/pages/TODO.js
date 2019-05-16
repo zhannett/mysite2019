@@ -8,7 +8,6 @@ const TODO = () => {
       <li>Update Resume</li>
       <li>Blockquotes => random from Array</li>
       <li>bg for large screens</li>
-      <li>styled-components => bg image</li>
       <li>Services => add blockquotes</li>
       <li>Dropdowns (for resume, education, etc.</li>
       <li>Update content</li>

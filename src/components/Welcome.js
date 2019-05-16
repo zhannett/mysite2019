@@ -6,6 +6,7 @@ import media from "../mediaTemplate";
 import LinkedIn from "../svgComponents/LinkedIn";
 import myPhotoWebp from "../assets/img/me3.webp";
 import myPhotoPng from "../assets/img/me3.png";
+import LinkedInLink from "../components/shared/LinkedInLink";
 
 const Portrait = styled.div`
   height: 200px;
@@ -90,17 +91,7 @@ const Welcome = () => {
   return (
     <div>
       <Layout.H1>Welcome!</Layout.H1>
-      <a
-        href="https://www.linkedin.com/in/janetkulyk/"
-        rel="noopener"
-        target="_blank"
-        title="Janet Kulyk's LinkedIn Profile"
-      >
-        <Layout.LinkedInContainer>
-          <LinkedIn />
-        </Layout.LinkedInContainer>
-      </a>
-
+      <LinkedInLink />
       <Promo>
         <div style={{ width: "auto", marginRight: "1rem" }}>
           <p style={{ color: "rgba(0,0,0,0.8)" }}>Hi!</p>
@@ -109,8 +100,8 @@ const Welcome = () => {
         </div>
         <Portrait>
           <picture>
-            <source srcset={myPhotoWebp} type="image/webp" />
-            <source srcset={myPhotoPng} type="image/png" />
+            <source srcSet={myPhotoWebp} type="image/webp" />
+            <source srcSet={myPhotoPng} type="image/png" />
             <img src={myPhotoPng} alt="My Photo" />
           </picture>
         </Portrait>

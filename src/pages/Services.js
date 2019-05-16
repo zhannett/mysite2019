@@ -7,7 +7,7 @@ import Header from "../components/shared/Header";
 import Footer from "../components/shared/Footer";
 import media from "../mediaTemplate";
 import MediumOrangeStar from "../svgComponents/MediumOrangeStar";
-import LinkedIn from "../svgComponents/LinkedIn";
+import LinkedInLink from "../components/shared/LinkedInLink";
 
 const List = styled.ul`
   padding: 0;
@@ -42,16 +42,7 @@ class Services extends Component {
         <main className="content-area page foldtl" style={{ padding: 0 }}>
           <div>
             <Layout.H1>Services</Layout.H1>
-            <a
-              href="https://www.linkedin.com/in/janetkulyk/"
-              rel="noopener"
-              target="_blank"
-              title="Janet Kulyk's LinkedIn Profile"
-            >
-              <Layout.LinkedInContainer>
-                <LinkedIn />
-              </Layout.LinkedInContainer>
-            </a>
+            <LinkedInLink />
             <List>
               <li>
                 <MediumOrangeStar /> <span>Web Services:</span> domain

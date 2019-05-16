@@ -178,8 +178,8 @@ class W3C extends Component {
               }}
             >
               <picture>
-                <source srcset={travisWebp} type="image/webp" />
-                <source srcset={travisPng} type="image/png" />
+                <source srcSet={travisWebp} type="image/webp" />
+                <source srcSet={travisPng} type="image/png" />
                 <img src={travisPng} alt="Travis" />
               </picture>
             </span>

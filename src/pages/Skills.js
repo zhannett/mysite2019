@@ -14,7 +14,7 @@ import SmallStar from "../svgComponents/SmallStar";
 import MediumOrangeStar from "../svgComponents/MediumOrangeStar";
 import Remote from "../assets/img/remote.gif";
 import RemoteA from "../assets/img/remote_a.gif";
-import LinkedIn from "../svgComponents/LinkedIn";
+import LinkedInLink from "../components/shared/LinkedInLink";
 
 const DL = styled.div`
   width: 100%;
@@ -101,16 +101,7 @@ class Skills extends Component {
         <main className="content-area page foldtl" style={{ padding: 0 }}>
           <div>
             <Layout.H1>Professional Skills</Layout.H1>
-            <a
-              href="https://www.linkedin.com/in/janetkulyk/"
-              rel="noopener"
-              target="_blank"
-              title="Janet Kulyk's LinkedIn Profile"
-            >
-              <Layout.LinkedInContainer>
-                <LinkedIn />
-              </Layout.LinkedInContainer>
-            </a>
+            <LinkedInLink />
             <DL>
               <DT>Operating Systems:</DT>
               <DD>Mac OS X, Windows XP+</DD>

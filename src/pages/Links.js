@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "@reach/router";
 
-import linksData from "../../src/linksData";
+import linksData from "../../src/data/linksData";
 import {
   Accordion,
   AccordionItem,
